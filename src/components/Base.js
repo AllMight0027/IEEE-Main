@@ -34,7 +34,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                 }}
               />
             </a>
-            <a href="" className="pl-4" style={{ paddingTop: "28px" }}>
+            <a href="/our-team" className="pl-4" style={{ paddingTop: "28px" }}>
               <TeamIcon /> Our Team
             </a>
 
