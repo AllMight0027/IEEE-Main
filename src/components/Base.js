@@ -1,67 +1,66 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import "../App.css";
 import { ReactComponent as TeamIcon } from "./team.svg";
 import { ReactComponent as EventIcon } from "./event.svg";
 
 const Base = ({ className = "text-dark p-4", children, history }) => {
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-  function myFunction2() {
-    console.log(2);
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
   return (
-    <div className="container-fluid">
-      <div className="row" style={{ backgroundColor: "black" }}>
-        <div className="col-12">
-          <div className="topnav" id="myTopnav">
-            <a style={{ marginLeft: "-20px" }}>
-              <img
-                title="Home"
-                src={require("./black.png")}
-                alt="LOGO"
-                style={{ maxHeight: "80px", cursor: "pointer" }}
-                onClick={() => {
-                  history.push("/");
-                }}
-              />
-            </a>
-            <a href="" className="pl-4" style={{ paddingTop: "28px" }}>
-              <TeamIcon /> Our Team
-            </a>
+    <div className="mx-4">
+      <nav className="navbar navbar-expand-md navbar-dark  w-100 ">
+        <a className="navbar-brand" href="#">
+          <img
+            src={require("./black.png")}
+            alt="LOGO"
+            style={{ maxHeight: "100px", cursor: "pointer" }}
+          />
+        </a>
 
-            <div className="dropdown pl-2" style={{ paddingTop: "16px" }}>
-              <button className="dropbtn" onClick={myFunction2}>
-                <EventIcon />
-                &nbsp;&nbsp;Events <i className="fa fa-caret-down"></i>
-              </button>
-              <div className="dropdown-content" id="myDropdown">
-                <a href="" className="ml-3" style={{ fontSize: "15px" }}>
-                  2019
-                </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul className="navbar-nav font ml-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <TeamIcon className="icon" />
+                Our Team
+              </a>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                <EventIcon className="icon" />
+                Events
+              </a>
+              <div className="dropdown-menu font">
+                <ul>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      2018
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      2019
+                    </a>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <a
-              style={{ fontSize: "20px", color: "white" }}
-              className="icon pt-4"
-              onClick={() => {
-                myFunction();
-              }}
-            >
-              &#9776;
-            </a>
-          </div>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div className={className}>{children}</div>
+      </nav>
     </div>
   );
 };
