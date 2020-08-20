@@ -78,7 +78,7 @@ const Home = () => {
           </div>
           <br />
           <div className="row">
-            <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4">
+            <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h6>
                 <b>“Innovate. Edify. Experience. Excel. ”</b> IEEE SRM is a
                 prolific student chapter that aims to inspire professionalism
