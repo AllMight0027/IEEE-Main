@@ -4,9 +4,8 @@ import "../App.css";
 
 const Type = () => {
   return (
-    <div className="text-center textEffect">
+    <div className=" container-fluid text-center textEffect">
       <ReactTypingEffect
-        className=""
         text={["IEEE. Innovate. Edify. Experience. Excel."]} //text=["Hello.", "World!"]
       />
     </div>

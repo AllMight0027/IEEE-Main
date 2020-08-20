@@ -34,6 +34,29 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                 }}
               />
             </a>
+            {history.location.pathname === "/" && (
+              <a
+                className="pl-4 text-white"
+                style={{ paddingTop: "28px", cursor: "pointer" }}
+                onClick={() => {
+                  window.scrollBy(0, 850);
+                }}
+              >
+                <TeamIcon /> About Us
+              </a>
+            )}
+            {history.location.pathname === "/" && (
+              <a
+                className="pl-4 text-white"
+                style={{ paddingTop: "28px", cursor: "pointer" }}
+                onClick={() => {
+                  window.scrollBy(0, 800);
+                }}
+              >
+                <TeamIcon /> Upcoming Events
+              </a>
+            )}
+
             <a href="/our-team" className="pl-4" style={{ paddingTop: "28px" }}>
               <TeamIcon /> Our Team
             </a>

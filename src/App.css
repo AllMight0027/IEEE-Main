@@ -38,6 +38,12 @@
   z-index: 100 !important;
 }
 
+@media screen and (max-width: 600px) {
+  .textEffect {
+    font-size: 3.8rem;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
