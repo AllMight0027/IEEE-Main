@@ -38,9 +38,13 @@
   z-index: 100 !important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
   .textEffect {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
+    z-index: 1 !important;
+  }
+  #about-text {
+    text-align: center;
   }
 }
 

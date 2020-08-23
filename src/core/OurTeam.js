@@ -7,9 +7,11 @@ function OurTeam() {
 
   useEffect(() => {
     document.title = "Loading...";
+    document.body.style.display = "none";
     getAllMembers().then((data) => {
       setMembers(data);
       document.title = "Our Team";
+      document.body.style.display = "";
     });
   }, []);
 
@@ -17,7 +19,7 @@ function OurTeam() {
     <Base>
       <div>
         <div className="container">
-          <div className="text-warning text-center mt-4 p-4" style={{}}>
+          <div className=" text-center mt-4 p-4">
             <img
               src={require("./Capture.PNG")}
               alt=""

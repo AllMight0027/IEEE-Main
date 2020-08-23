@@ -8,8 +8,14 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
+      if (document.getElementById("name"))
+        document.getElementById("name").style.top = "70%";
+      console.log("open");
     } else {
       x.className = "topnav";
+      if (document.getElementById("name"))
+        document.getElementById("name").style.top = "50%";
+      console.log("close");
     }
   }
 
@@ -20,6 +26,19 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
 
   return (
     <div>
+      <img
+        id="goTop"
+        src="https://img.icons8.com/fluent/35/000000/up.png"
+        style={{
+          // position: "absolute",
+          bottom: 15,
+          right: 15,
+          cursor: "pointer",
+        }}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      />
       <div className="container-fluid">
         <div className="row" style={{ backgroundColor: "black" }}>
           <div className="col-12">
@@ -29,7 +48,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                   title="Home"
                   src={require("./black.png")}
                   alt="LOGO"
-                  style={{ maxHeight: "80px", cursor: "pointer" }}
+                  style={{ maxHeight: "75px", cursor: "pointer" }}
                   onClick={() => {
                     history.push("/");
                   }}
@@ -40,7 +59,11 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                   className="pl-4 text-white"
                   style={{ paddingTop: "28px", cursor: "pointer" }}
                   onClick={() => {
-                    //Scroll to About Us
+                    window.scrollTo(
+                      0,
+                      document.getElementById("about").getBoundingClientRect()
+                        .top - 50
+                    );
                   }}
                 >
                   <TeamIcon /> About Us
@@ -51,7 +74,12 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                   className="pl-4 text-white"
                   style={{ paddingTop: "28px", cursor: "pointer" }}
                   onClick={() => {
-                    //Scroll to Upcoming Events
+                    window.scrollTo(
+                      0,
+                      document
+                        .getElementById("upevents")
+                        .getBoundingClientRect().top - 50
+                    );
                   }}
                 >
                   <TeamIcon /> Upcoming Events
@@ -91,7 +119,10 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
         </div>
         <div className={className}>{children}</div>
       </div>
-      <footer className="footer bg-dark mt-5 pt-3">
+      <footer
+        className="footer mt-5 pt-3"
+        style={{ backgroundColor: "rgb(40,40,40)" }}
+      >
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-3">
@@ -100,7 +131,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
             <div className="col-sm-3">{/* Quick Links */}</div>
             <div className="col-sm-3">{/* Contact Details*/}</div>
           </div>
-          <span className="text-white">© Web And App Dev Team, IEEE-SRM</span>
+          <small className="text-white">© Web And App Dev Team, IEEE-SRM</small>
         </div>
       </footer>
     </div>

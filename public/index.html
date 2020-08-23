@@ -8,6 +8,10 @@
     <meta name="description" content="IEEE SRM Student Chapter Website" />
     <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/IEEElogo.png" /> -->
 
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -88,7 +92,7 @@
       color: black;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 830px) {
       .topnav a:not(:first-child),
       .dropdown .dropbtn {
         display: none;
@@ -99,7 +103,7 @@
       }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 830px) {
       .topnav.responsive {
         position: relative;
       }
@@ -118,11 +122,28 @@
       }
       .topnav.responsive .dropdown-content {
         position: relative;
+        z-index: 99 !important;
       }
       .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
         text-align: left;
+        z-index: 99 !important;
+      }
+    }
+    #goTop {
+      display: none;
+      position: fixed;
+      z-index: 99;
+    }
+
+    .poster {
+      height: 500px;
+    }
+
+    @media screen and (max-width: 620px) {
+      .poster {
+        height: 300px;
       }
     }
   </style>
