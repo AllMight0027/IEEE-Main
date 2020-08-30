@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import OurTeam from "./core/OurTeam";
 import Home from "./core/Home";
 import UpcomingEvent from "./core/UpcomingEvent";
+import CompletedEvents from "./core/CompletedEvents";
 
 export default function Routes() {
   return (
@@ -12,6 +13,11 @@ export default function Routes() {
           <Route exact path="/" component={Home} />
           <Route exact path="/our-team" component={OurTeam} />
           <Route exact path="/event/:eventId" component={UpcomingEvent} />
+          <Route
+            exact
+            path="/previous-events/:folderName/:folderId"
+            component={CompletedEvents}
+          />
         </Switch>
       </BrowserRouter>
     </div>

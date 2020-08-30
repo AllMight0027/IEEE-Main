@@ -21,3 +21,21 @@ export const getUpcomingEvent = (eventId) => {
     })
     .catch((e) => console.log(e));
 };
+
+export const getAllFolders = () => {
+  return fetch(`https://ieee-srm-sb.herokuapp.com/api/eventfolder`)
+    .then((data) => {
+      return data.json();
+    })
+    .catch((e) => console.log(e));
+};
+
+export const getCompletedEvents = (folderId) => {
+  return fetch(
+    `https://ieee-srm-sb.herokuapp.com/api/completedevent/folder/${folderId}`
+  )
+    .then((data) => {
+      return data.json();
+    })
+    .catch((e) => console.log(e));
+};
