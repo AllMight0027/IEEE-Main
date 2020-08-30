@@ -148,7 +148,7 @@ ul a:hover {
     transform: rotate(360deg);
   }
 }
-h1 {
+.h1c {
   outline: 1px dashed #98abb9;
   outline-offset: -5px;
   background-color: rgb(40, 40, 40);

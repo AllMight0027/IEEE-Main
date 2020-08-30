@@ -20,7 +20,7 @@ const UpcomingEvent = ({ match }) => {
     <Base>
       <div className="container text-white">
         <div className=" text-center mt-4 p-4">
-          <h1 className="font-weight-bold">{event.name}</h1>
+          <h1 className="h1c font-weight-bold">{event.name}</h1>
         </div>
         <div className="row mt-4">
           <div className="col-xl-6 col-lg-6 col-sm-12 text-center">
