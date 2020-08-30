@@ -106,7 +106,7 @@ function Footer() {
       </div>
 
       <div className="footer-copyright text-white text-center py-3">
-        Made with <span class="heart">❤</span> by IEEE SRM SB
+        Made with <span class="heart">❤️️</span> by IEEE SRM SB
       </div>
     </footer>
   );
