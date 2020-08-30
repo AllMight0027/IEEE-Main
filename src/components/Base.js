@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import { ReactComponent as TeamIcon } from "./team.svg";
 import { ReactComponent as EventIcon } from "./event.svg";
+import { useState } from "react";
+import { getAllFolders } from "../core/helper/apicalls";
 import Footer from "./Footer";
 
 const Base = ({ className = "text-dark p-4", children, history }) => {
@@ -10,7 +12,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
     if (x.className === "topnav") {
       x.className += " responsive";
       if (document.getElementById("name"))
-        document.getElementById("name").style.top = "70%";
+        document.getElementById("name").style.top = "75%";
       console.log("open");
     } else {
       x.className = "topnav";
@@ -25,13 +27,32 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
     document.getElementById("myDropdown").classList.toggle("show");
   }
 
+  const [folders, setFolders] = useState([]);
+
+  useEffect(() => {
+    getAllFolders().then((data) => {
+      if (!data.error) setFolders(data);
+    });
+  }, []);
+
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      document.getElementById("goTop").style.display = "block";
+    } else {
+      document.getElementById("goTop").style.display = "none";
+    }
+  };
+
   return (
     <div>
       <img
         id="goTop"
         src="https://img.icons8.com/fluent/35/000000/up.png"
         style={{
-          // position: "absolute",
+          // position: "fixed",
           bottom: 15,
           right: 15,
           cursor: "pointer",
@@ -58,7 +79,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
               {history.location.pathname === "/" && (
                 <a
                   className="pl-4 text-white"
-                  style={{ paddingTop: "28px", cursor: "pointer" }}
+                  style={{ paddingTop: "18px", cursor: "pointer" }}
                   onClick={() => {
                     window.scrollTo(
                       0,
@@ -73,7 +94,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
               {history.location.pathname === "/" && (
                 <a
                   className="pl-4 text-white"
-                  style={{ paddingTop: "28px", cursor: "pointer" }}
+                  style={{ paddingTop: "18px", cursor: "pointer" }}
                   onClick={() => {
                     window.scrollTo(
                       0,
@@ -90,20 +111,32 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
               <a
                 href="/our-team"
                 className="pl-4"
-                style={{ paddingTop: "28px" }}
+                style={{ paddingTop: "18px" }}
               >
                 <TeamIcon /> Our Team
               </a>
 
-              <div className="dropdown pl-2" style={{ paddingTop: "16px" }}>
+              <div className="dropdown pl-2" style={{ paddingTop: "6px" }}>
                 <button className="dropbtn" onClick={myFunction2}>
                   <EventIcon />
-                  &nbsp;&nbsp;Events <i className="fa fa-caret-down"></i>
+                  &nbsp;&nbsp;Events&nbsp;&nbsp;
+                  <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="dropdown-content" id="myDropdown">
-                  <a href="" className="ml-3" style={{ fontSize: "15px" }}>
-                    2019
-                  </a>
+                  {folders &&
+                    folders.length !== 0 &&
+                    folders.map((folder, i) => {
+                      return (
+                        <a
+                          key={`~${i}`}
+                          href={`/previous-events/${folder.name}/${folder._id}`}
+                          className="ml-3"
+                          style={{ fontSize: "15px" }}
+                        >
+                          {folder.name}
+                        </a>
+                      );
+                    })}
                 </div>
               </div>
               <a
