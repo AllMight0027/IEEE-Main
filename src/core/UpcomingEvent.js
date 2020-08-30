@@ -33,22 +33,6 @@ const UpcomingEvent = ({ match }) => {
               }}
             />
             <br />
-
-            {event.registration && (
-              <h6 className="mt-3">
-                <a
-                  href={`${event.registrationLink}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-light btn-lg"
-                >
-                  REGISTER HERE
-                </a>
-              </h6>
-            )}
-            {!event.registration && (
-              <h6 className="mt-3">REGISTERATION CLOSED</h6>
-            )}
           </div>
           <div
             className="col-xl-6 col-lg-6  col-sm-12 text-left my-auto h5"
@@ -57,6 +41,22 @@ const UpcomingEvent = ({ match }) => {
             {event.description}
           </div>
         </div>
+        {event.registration && (
+          <h6 className="mt-3">
+            <a
+              href={`${event.registrationLink}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-light btn-lg btn-block mx-auto"
+              style={{
+                width: "60%",
+              }}
+            >
+              REGISTER HERE
+            </a>
+          </h6>
+        )}
+        {!event.registration && <h6 className="mt-3">REGISTERATION CLOSED</h6>}
       </div>
     </Base>
   );
