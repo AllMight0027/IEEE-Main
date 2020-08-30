@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { ReactComponent as TeamIcon } from "./team.svg";
 import { ReactComponent as EventIcon } from "./event.svg";
+import Footer from "./Footer";
 
 const Base = ({ className = "text-dark p-4", children, history }) => {
   function myFunction() {
@@ -119,21 +120,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
         </div>
         <div className={className}>{children}</div>
       </div>
-      <footer
-        className="footer mt-5 pt-3"
-        style={{ backgroundColor: "rgb(40,40,40)" }}
-      >
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-sm-3">
-              {/* Intrested in being a Member Form; We will contact you */}
-            </div>
-            <div className="col-sm-3">{/* Quick Links */}</div>
-            <div className="col-sm-3">{/* Contact Details*/}</div>
-          </div>
-          <small className="text-white">© Web And App Dev Team, IEEE-SRM</small>
-        </div>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 };

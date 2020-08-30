@@ -242,54 +242,60 @@ const Home = ({ history }) => {
                   onClick={() => history.push(`/event/${upcomingEvent._id}`)}
                 >
                   <div class="card" style={{ backgroundColor: "black" }}>
-                    <div class="row no-gutters">
-                      <div class="col-auto">
-                        <img
-                          src={`https://ieee-srm-sb.herokuapp.com/api/upcomingevent/icon/${upcomingEvent._id}`}
-                          class="img-fluid"
-                          alt=""
-                          style={{ height: "100px", borderRadius: "5px" }}
-                        />
-                      </div>
+                    <div class="row mx-auto">
                       <div
-                        class="col "
+                        class="col-12 py-2"
                         style={{
-                          height: "100px",
-                          borderTopRightRadius: "5px",
-                          borderBottomRightRadius: "5px",
                           background: "rgb(30,30,30)",
+                          borderRadius: "5px",
+                          border: "solid 2px #4D91B3",
                         }}
                       >
-                        <div
-                          class="card-block p-2"
-                          style={{ textAlign: "center" }}
-                        >
-                          <p
-                            class="card-title h4 mt-1"
-                            style={{
-                              paddingLeft: "1px",
-                              paddingRight: "0.3px",
-                            }}
+                        <div className="row">
+                          <div className="col-3">
+                            <img
+                              src={`https://ieee-srm-sb.herokuapp.com/api/upcomingevent/icon/${upcomingEvent._id}`}
+                              className="img1"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="card-block p-2 col-9"
+                            style={{ textAlign: "center" }}
                           >
-                            {upcomingEvent.name}
-                          </p>
-                          {upcomingEvent.from === upcomingEvent.to && (
-                            <small
-                              class="card-body h6"
-                              style={{ marginTop: "-27px" }}
+                            <p
+                              class="card-title h3 mt-1 text-center"
+                              style={{
+                                paddingLeft: "1rem",
+                                paddingRight: "0.5rem",
+                              }}
                             >
-                              Date: {upcomingEvent.from}
-                            </small>
-                          )}
-                          {upcomingEvent.from !== upcomingEvent.to && (
-                            <small
-                              class="card-body "
-                              style={{ marginTop: "-27px" }}
-                            >
-                              From: {upcomingEvent.from}&nbsp;&nbsp;To:{" "}
-                              {upcomingEvent.to}
-                            </small>
-                          )}
+                              {upcomingEvent.name}
+                            </p>
+                            {upcomingEvent.from === upcomingEvent.to && (
+                              <h4
+                                class="card-body h4"
+                                style={{
+                                  position: "absolute",
+                                  right: "0",
+                                  bottom: "0",
+                                  fontWeight: "bold",
+                                  marginBottom: "-20px",
+                                }}
+                              >
+                                Date: {upcomingEvent.from}
+                              </h4>
+                            )}
+                            {upcomingEvent.from !== upcomingEvent.to && (
+                              <small
+                                class="card-body "
+                                style={{ marginTop: "-27px" }}
+                              >
+                                From: {upcomingEvent.from}&nbsp;&nbsp;To:{" "}
+                                {upcomingEvent.to}
+                              </small>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>

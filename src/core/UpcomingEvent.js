@@ -15,19 +15,22 @@ const UpcomingEvent = ({ match }) => {
         document.body.style.display = "";
       }
     });
-  }, []);
+  }, [match.params.eventId]);
   return (
     <Base>
       <div className="container text-white">
         <div className=" text-center mt-4 p-4">
-          <h3>{event.name}</h3>
+          <h1 className="font-weight-bold">{event.name}</h1>
         </div>
         <div className="row mt-4">
-          <div className="col-12 text-center">
+          <div className="col-xl-6 col-lg-6 col-sm-12 text-center">
             <img
               src={`https://ieee-srm-sb.herokuapp.com/api/upcomingevent/poster/${event._id}`}
               alt=""
               className="poster"
+              style={{
+                borderRadius: "10px",
+              }}
             />
             <br />
 
@@ -37,6 +40,7 @@ const UpcomingEvent = ({ match }) => {
                   href={`${event.registrationLink}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="btn btn-outline-light btn-lg"
                 >
                   REGISTER HERE
                 </a>
@@ -46,9 +50,12 @@ const UpcomingEvent = ({ match }) => {
               <h6 className="mt-3">REGISTERATION CLOSED</h6>
             )}
           </div>
-        </div>
-        <div className="row mt-4">
-          <div className="col-12 text-center">{event.description}</div>
+          <div
+            className="col-xl-6 col-lg-6  col-sm-12 text-left my-auto h5"
+            style={{ lineHeight: "2rem", borderLeft: "solid 5px #4D91B3" }}
+          >
+            {event.description}
+          </div>
         </div>
       </div>
     </Base>
