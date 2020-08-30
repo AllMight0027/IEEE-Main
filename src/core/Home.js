@@ -163,9 +163,9 @@ const Home = ({ history }) => {
                 <div className="row">
                   <div className="col-11 text-center">
                     <h6>
-                      <b className="ludwig">
-                        “There’s no power for change greater than a community
-                        discovering what it cares about.”
+                      <b className="ludwig" style={{ lineHeight: "40px" }}>
+                        There’s no power for change greater than a community
+                        discovering what it cares about.
                       </b>
                     </h6>
                   </div>
@@ -197,7 +197,9 @@ const Home = ({ history }) => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h6>
-                <b className="ludwig">“Innovate. Edify. Experience. Excel. ”</b>
+                <b className="ludwig" style={{ lineHeight: "40px" }}>
+                  Innovate. Edify. Experience. Excel.
+                </b>
                 <p className="about-para text-left">
                   IEEE SRM is a prolific student chapter that aims to inspire
                   professionalism and empower students, help them learn and
@@ -265,6 +267,7 @@ const Home = ({ history }) => {
                           >
                             <p
                               class="card-title h3 mt-1 text-center"
+                              id="nameEvent"
                               style={{
                                 paddingLeft: "1rem",
                                 paddingRight: "0.5rem",

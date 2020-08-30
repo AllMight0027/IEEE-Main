@@ -5,38 +5,78 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="row">
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 my-3 d-none d-lg-block">
-            <ul>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Upcoming Events</a>
-              </li>
-              <li>
-                <a href="#">Our Team</a>
-              </li>
-              <li>
-                <a href="#">Events</a>
-              </li>
-            </ul>
+        <div className="row mt-3">
+          <div className="col-sm-6 mt-4 text-center text-white">
+            <div className="row">
+              <div className="col-12">
+                <h5 className="text-uppercase font-weight-bold mb-3">
+                  CONTACT US
+                </h5>
+              </div>
+              <div className="col-12">
+                <p>
+                  <i className="fa fa-map mr-3"></i> New York, NY 10012, US
+                </p>
+                <p>
+                  <i className="fa fa-envelope mr-3"></i>{" "}
+                  <a href="mailto:ieee.srmktr@gmail.com" className="text-white">
+                    ieee.srmktr@gmail.com
+                  </a>
+                  &nbsp;&nbsp;
+                </p>
+              </div>
+              <div className="col-12 text-center text-white pb-3">
+                {" "}
+                <a
+                  href="https://github.com/IEEE-SRM-Student-Branch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://img.icons8.com/fluent/39/000000/twitter.png"
+                    className="mr-2"
+                  />
+                </a>
+                <a
+                  href="https://github.com/IEEE-SRM-Student-Branch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://img.icons8.com/fluent/42/000000/github.png"
+                    className="mr-2"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/ieeesrmist/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://img.icons8.com/office/38/000000/linkedin.png"
+                    className="mr-2"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/ieeesrmist/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="https://img.icons8.com/fluent/40/000000/instagram-new.png" />
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 contact my-3">
-            <h5 className="text-uppercase font-weight-bold mb-3">CONTACT</h5>
-
-            <p>
-              <i className="fas fa-map mr-3"></i> New York, NY 10012, US
-            </p>
-            <p>
-              <i className="fas fa-envelope mr-3"></i> info@example.com
-            </p>
-            <p>
-              <i className="fas fa-instagram mr-3"></i> info@example.com
-            </p>
-          </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 my-3">
-            <form className="form">
+          <div className="col-sm-6 mt-4 text-center">
+            <div className="col-12 text-center text-white">
+              <h5 className="text-uppercase font-weight-bold mb-3">
+                WANT US TO CONTACT YOU?
+              </h5>
+            </div>
+            <form
+              className="form"
+              style={{ display: "inline-block", width: "275px" }}
+            >
               <div className="form-group">
                 <input
                   type="email"

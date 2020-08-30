@@ -20,7 +20,7 @@ const UpcomingEvent = ({ match }) => {
     <Base>
       <div className="container text-white">
         <div className=" text-center mt-4 p-4">
-          <h1 className="h1c font-weight-bold">{event.name}</h1>
+          <h1 className="h1c font-weight-bold py-2">{event.name}</h1>
         </div>
         <div className="row mt-4">
           <div className="col-xl-6 col-lg-6 col-sm-12 text-center">
@@ -42,7 +42,7 @@ const UpcomingEvent = ({ match }) => {
           </div>
         </div>
         {event.registration && (
-          <h6 className="mt-3">
+          <h6 className="mt-4">
             <a
               href={`${event.registrationLink}`}
               target="_blank"
@@ -56,7 +56,7 @@ const UpcomingEvent = ({ match }) => {
             </a>
           </h6>
         )}
-        {!event.registration && <h6 className="mt-3">REGISTERATION CLOSED</h6>}
+        {!event.registration && <h6 className="mt-4">REGISTERATION CLOSED</h6>}
       </div>
     </Base>
   );
