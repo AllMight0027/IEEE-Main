@@ -6,6 +6,7 @@ import Type from "../components/Type";
 import { getAllUpcomingEvents } from "./helper/apicalls";
 import { ReactComponent as LoadingIcon } from "../components/Double Ring-1s-200px.svg";
 import { withRouter } from "react-router-dom";
+
 const Home = ({ history }) => {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
 
@@ -21,26 +22,128 @@ const Home = ({ history }) => {
 
   return (
     <Base>
-      <div className="container-fluid" style={{ height: "750px" }} id="type">
+      <div
+        className="container-fluid particles"
+        style={{ height: "100vh" }}
+        id="type"
+      >
         <Type />
-        <Particles
-          params={{
-            polygon: {
-              number: {
-                value: 10,
-                density: {
-                  // enable: true,
-                  value_area: 10,
+        <div className="">
+          <Particles
+            canvasClassName="example"
+            height="100vh"
+            width="90%"
+            params={{
+              particles: {
+                number: {
+                  value: 150,
+                  density: {
+                    enable: true,
+                    value_area: 1803.4120608655228,
+                  },
+                },
+                color: {
+                  value: "#ffffff",
+                },
+                shape: {
+                  type: "polygon",
+                  stroke: {
+                    width: 3,
+                    color: "#000000",
+                  },
+                  polygon: {
+                    nb_sides: 3,
+                  },
+                },
+                opacity: {
+                  value: 0.4008530152163807,
+                  random: false,
+                  anim: {
+                    enable: false,
+                    speed: 1,
+                    opacity_min: 0.1,
+                    sync: false,
+                  },
+                },
+                size: {
+                  value: 5.5,
+                  random: true,
+                  anim: {
+                    enable: false,
+                    speed: 40,
+                    size_min: 0.1,
+                    sync: false,
+                  },
+                },
+                line_linked: {
+                  enable: true,
+                  distance: 0,
+                  color: "#ffffff",
+                  opacity: 0.3687847739990702,
+                  width: 0.6413648243462091,
+                },
+                move: {
+                  enable: true,
+                  speed: 6,
+                  direction: "none",
+                  random: false,
+                  straight: false,
+                  out_mode: "out",
+                  bounce: false,
+                  attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200,
+                  },
                 },
               },
-            },
-          }}
-        />
+              interactivity: {
+                detect_on: "window",
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: "repulse",
+                  },
+                  onclick: {
+                    enable: false,
+                    mode: "bubble",
+                  },
+                  resize: true,
+                },
+                modes: {
+                  grab: {
+                    distance: 400,
+                    line_linked: {
+                      opacity: 1,
+                    },
+                  },
+                  bubble: {
+                    distance: 400,
+                    size: 40,
+                    duration: 2,
+                    opacity: 8,
+                    speed: 3,
+                  },
+                  repulse: {
+                    distance: 100,
+                    duration: 0.4,
+                  },
+                  push: {
+                    particles_nb: 4,
+                  },
+                  remove: {
+                    particles_nb: 2,
+                  },
+                },
+              },
+            }}
+          />
+        </div>
       </div>
       <div className="container-fluid text-white">
         <div className="row" id="about">
           <div className="col-12 text-center">
-            <h2>About Us</h2>
+            <h1 className="font-weight-bold">ABOUT US</h1>
           </div>
           <br />
           <div className="row">
@@ -48,7 +151,11 @@ const Home = ({ history }) => {
               <img
                 src={require("./Asset 1.png")}
                 alt=""
-                style={{ maxWidth: "300px", marginTop: "-38px" }}
+                className="m-auto"
+                style={{
+                  maxWidth: "300px",
+                  marginTop: "-38px",
+                }}
               />
             </div>
             <div className="col-md-5 mt-4 pr-md-4" id="about-text">
@@ -56,56 +163,61 @@ const Home = ({ history }) => {
                 <div className="row">
                   <div className="col-11 text-center">
                     <h6>
-                      <b>
+                      <b className="ludwig">
                         “There’s no power for change greater than a community
                         discovering what it cares about.”
-                      </b>{" "}
+                      </b>
                     </h6>
                   </div>
                 </div>
-                IEEE SRM is not just any student club rather a prolific student
-                chapter and multitude of the scholarly that aims in advancing
-                technology for Humanity reminds the technology community and the
-                world that IEEE stands at the forefront of technological change
-                for the betterment of humanity. No matter how advanced
-                technology gets, there will always be a divide keeping us from
-                truly knowing a few work-related domains. Here at IEEE, we
-                bridge that gap with engaging activities across various such
-                domains, where no work goes obscure. Every student, every
-                passion and every interest matters to us and all are
-                well-addressed and acknowledged. It is also a shared-platform
-                for the exultant upbringing of new ideas or projects into
-                furtherance.
+                <p className="about-para">
+                  IEEE SRM is not just any student club rather a prolific
+                  student chapter and multitude of the scholarly that aims in
+                  advancing technology for Humanity reminds the technology
+                  community and the world that IEEE stands at the forefront of
+                  technological change for the betterment of humanity. No matter
+                  how advanced technology gets, there will always be a divide
+                  keeping us from truly knowing a few work-related domains. Here
+                  at IEEE, we bridge that gap with engaging activities across
+                  various such domains, where no work goes obscure. Every
+                  student, every passion and every interest matters to us and
+                  all are well-addressed and acknowledged. It is also a
+                  shared-platform for the exultant upbringing of new ideas or
+                  projects into furtherance.
+                </p>
               </h6>
             </div>
           </div>
         </div>
         <div className="row mt-5">
           <div className="col-12 text-center">
-            <h2>Our Vision</h2>
+            <h1 className="font-weight-bold">OUR VISION</h1>
           </div>
           <br />
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h6>
-                <b>“Innovate. Edify. Experience. Excel. ”</b> IEEE SRM is a
-                prolific student chapter that aims to inspire professionalism
-                and empower students, help them learn and implement new skills
-                and technologies, gain exemplary knowledge through various
-                engaging workshops and webinars, experience in fields of
-                interest like application and website development, robotics and
-                automation, consumer and power electronics, engineering, media,
-                corporate and content writing, carry out research, publish
-                papers, establish a professional profile and network with
-                esteemed IEEE alumni across the globe, and develop projects that
-                greatly benefit mankind.
+                <b className="ludwig">“Innovate. Edify. Experience. Excel. ”</b>
+                <p className="about-para text-left">
+                  IEEE SRM is a prolific student chapter that aims to inspire
+                  professionalism and empower students, help them learn and
+                  implement new skills and technologies, gain exemplary
+                  knowledge through various engaging workshops and webinars,
+                  experience in fields of interest like application and website
+                  development, robotics and automation, consumer and power
+                  electronics, engineering, media, corporate and content
+                  writing, carry out research, publish papers, establish a
+                  professional profile and network with esteemed IEEE alumni
+                  across the globe, and develop projects that greatly benefit
+                  mankind.
+                </p>
               </h6>
             </div>
           </div>
         </div>
         <div className="row mt-5" id="upevents" style={{ minHeight: "190px" }}>
           <div className="col-12 text-center mt-5">
-            <h2>Upcoming Events</h2>
+            <h1 className="font-weight-bold">Upcoming Events</h1>
           </div>
           <br />
           {upcomingEvents && upcomingEvents.length === 0 && (
@@ -116,7 +228,6 @@ const Home = ({ history }) => {
           {upcomingEvents && upcomingEvents.error && (
             <div className=" col-12 mt-4 text-center">
               <h5>
-                {" "}
                 We Are Planning Something Great. Stick Around To Find Out Soon.
               </h5>
             </div>
@@ -126,7 +237,7 @@ const Home = ({ history }) => {
             upcomingEvents.map((upcomingEvent, i) => {
               return (
                 <div
-                  className=" col-sm-12  col-md-4 mt-4 text-center"
+                  className=" col-sm-12  mt-4 text-center"
                   style={{ backgroundColor: "black", cursor: "pointer" }}
                   onClick={() => history.push(`/event/${upcomingEvent._id}`)}
                 >
@@ -154,7 +265,7 @@ const Home = ({ history }) => {
                           style={{ textAlign: "center" }}
                         >
                           <p
-                            class="card-title mt-1"
+                            class="card-title h4 mt-1"
                             style={{
                               paddingLeft: "1px",
                               paddingRight: "0.3px",
@@ -164,15 +275,15 @@ const Home = ({ history }) => {
                           </p>
                           {upcomingEvent.from === upcomingEvent.to && (
                             <small
-                              class="card-body"
+                              class="card-body h6"
                               style={{ marginTop: "-27px" }}
                             >
-                              On: {upcomingEvent.from}
+                              Date: {upcomingEvent.from}
                             </small>
                           )}
                           {upcomingEvent.from !== upcomingEvent.to && (
                             <small
-                              class="card-body"
+                              class="card-body "
                               style={{ marginTop: "-27px" }}
                             >
                               From: {upcomingEvent.from}&nbsp;&nbsp;To:{" "}
