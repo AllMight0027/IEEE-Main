@@ -46,7 +46,7 @@ const CompletedEvents = ({ match }) => {
                     alt=""
                   />
                 </div>
-                <div className="col-12 p-3">
+                <div className="col-12 p-3 text-justify">
                   <h6>{event.description}</h6>
                 </div>
               </div>
