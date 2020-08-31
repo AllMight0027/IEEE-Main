@@ -7,6 +7,7 @@ function OurTeam() {
 
   useEffect(() => {
     document.title = "Loading...";
+    document.body.style.background = "none";
     document.body.style.display = "none";
     getAllMembers().then((data) => {
       setMembers(data);

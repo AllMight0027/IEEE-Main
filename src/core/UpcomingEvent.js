@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import Base from "../components/Base";
 import { getUpcomingEvent } from "./helper/apicalls";
 import { data } from "jquery";
+import bg from "../components/2455942.jpg";
 
 const UpcomingEvent = ({ match }) => {
   const [event, setEvent] = useState({});
   useEffect(() => {
-    document.body.style.backgroundColor = "black";
+    document.body.style.backgroundImage = `url(${bg})`;
     document.body.style.display = "none";
 
     getUpcomingEvent(match.params.eventId).then((data) => {

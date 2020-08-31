@@ -12,7 +12,8 @@ const Home = ({ history }) => {
 
   useEffect(() => {
     document.title = "Loading...";
-    document.body.style.backgroundColor = "black";
+    // document.body.style.background = "none";
+    document.body.style.background = "black";
     getAllUpcomingEvents().then((data) => {
       setUpcomingEvents(data);
 
