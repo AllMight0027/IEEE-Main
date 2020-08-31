@@ -28,7 +28,7 @@ function Footer() {
               <div className="col-12 text-center text-white pb-3">
                 {" "}
                 <a
-                  href="https://github.com/IEEE-SRM-Student-Branch"
+                  href="https://twitter.com/ieeesrmist"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -75,7 +75,7 @@ function Footer() {
             </div>
             <form
               className="form"
-              style={{ display: "inline-block", width: "275px" }}
+              style={{ display: "inline-block", width: "295px" }}
             >
               <div className="form-group">
                 <input

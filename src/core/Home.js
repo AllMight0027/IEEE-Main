@@ -170,7 +170,7 @@ const Home = ({ history }) => {
                     </h6>
                   </div>
                 </div>
-                <p className="about-para">
+                <p className="about-para text-justify">
                   IEEE SRM is not just any student club rather a prolific
                   student chapter and multitude of the scholarly that aims in
                   advancing technology for Humanity reminds the technology
@@ -197,10 +197,10 @@ const Home = ({ history }) => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h6>
-                <b className="ludwig" style={{ lineHeight: "40px" }}>
+                <b className="ludwig" style={{ lineHeight: "45px" }}>
                   Innovate. Edify. Experience. Excel.
                 </b>
-                <p className="about-para text-left">
+                <p className="about-para text-justify">
                   IEEE SRM is a prolific student chapter that aims to inspire
                   professionalism and empower students, help them learn and
                   implement new skills and technologies, gain exemplary
