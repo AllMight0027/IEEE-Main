@@ -7,6 +7,7 @@ import bg from "../components/Artboard1.png";
 const UpcomingEvent = ({ match }) => {
   const [event, setEvent] = useState({});
   useEffect(() => {
+    document.title = "Loading...";
     document.body.style.backgroundColor = `black`;
 
     document.body.style.display = "none";
@@ -15,6 +16,7 @@ const UpcomingEvent = ({ match }) => {
       if (!data.error) {
         setEvent(data);
         document.body.style.display = "";
+        document.title = data.name;
       }
     });
   }, [match.params.eventId]);
@@ -58,7 +60,15 @@ const UpcomingEvent = ({ match }) => {
             </a>
           </h6>
         )}
-        {!event.registration && <h6 className="mt-4">REGISTERATION CLOSED</h6>}
+        {!event.registration && (
+          <div className="row">
+            <div className="col-12 text-center">
+              <h5 className="mt-4 text-danger font-weight-bold">
+                REGISTERATION CLOSED
+              </h5>
+            </div>
+          </div>
+        )}
       </div>
     </Base>
   );

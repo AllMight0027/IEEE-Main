@@ -77,7 +77,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
 
               {history.location.pathname === "/" && (
                 <a
-                  className="pl-4 text-white"
+                  className="pl-4 mt-2 text-white"
                   style={{ paddingTop: "18px", cursor: "pointer" }}
                   onClick={() => {
                     window.scrollTo(
@@ -93,7 +93,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
               )}
               {history.location.pathname === "/" && (
                 <a
-                  className="pl-4 text-white"
+                  className="pl-4 text-white mt-2"
                   style={{ paddingTop: "18px", cursor: "pointer" }}
                   onClick={() => {
                     window.scrollTo(
@@ -111,14 +111,17 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
 
               <a
                 href="/our-team"
-                className="pl-4"
+                className="pl-4 mt-2"
                 style={{ paddingTop: "18px" }}
               >
                 <i class="fa fa-users" aria-hidden="true"></i>
                 Our Team
               </a>
 
-              <div className="dropdown pl-2" style={{ paddingTop: "6px" }}>
+              <div
+                className="dropdown pl-2  mt-2"
+                style={{ paddingTop: "6px" }}
+              >
                 <button className="dropbtn" onClick={myFunction2}>
                   <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                   &nbsp;&nbsp;Events&nbsp;&nbsp;

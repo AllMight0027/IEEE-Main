@@ -20,9 +20,8 @@ function Footer() {
                 <p>
                   <i className="fa fa-envelope mr-3"></i>{" "}
                   <a href="mailto:ieee.srmktr@gmail.com" className="text-white">
-                    ieee@srmuniv.edu.in
+                    ieee@srmuniv.edu.in&nbsp;&emsp;&emsp;
                   </a>
-                  &nbsp;&nbsp;
                 </p>
               </div>
               <div className="col-12 text-center text-white pb-3">
@@ -62,14 +61,17 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://img.icons8.com/fluent/40/000000/instagram-new.png" />
+                  <img
+                    src="https://img.icons8.com/fluent/40/000000/instagram-new.png"
+                    className="mr-2"
+                  />
                 </a>
                 <a
                   href="https://www.facebook.com/ieeesrmist"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://img.icons8.com/fluent/40/000000/facebook-new.png" />
+                  <img src="https://img.icons8.com/fluent/39/000000/facebook-new.png" />
                 </a>
               </div>
             </div>
