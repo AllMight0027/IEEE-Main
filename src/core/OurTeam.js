@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Base from "../components/Base";
 import { getAllMembers } from "./helper/apicalls";
+import "../App.css";
 
 function OurTeam() {
   const [members, setMembers] = useState([]);

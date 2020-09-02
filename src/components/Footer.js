@@ -15,12 +15,12 @@ function Footer() {
               </div>
               <div className="col-12">
                 <p>
-                  <i className="fa fa-map mr-3"></i> New York, NY 10012, US
+                  <i className="fa fa-map mr-3"></i> SRMIST - KTR, Tamil Nadu
                 </p>
                 <p>
                   <i className="fa fa-envelope mr-3"></i>{" "}
                   <a href="mailto:ieee.srmktr@gmail.com" className="text-white">
-                    ieee.srmktr@gmail.com
+                    ieee@srmuniv.edu.in
                   </a>
                   &nbsp;&nbsp;
                 </p>
@@ -63,6 +63,13 @@ function Footer() {
                   rel="noopener noreferrer"
                 >
                   <img src="https://img.icons8.com/fluent/40/000000/instagram-new.png" />
+                </a>
+                <a
+                  href="https://www.facebook.com/ieeesrmist"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="https://img.icons8.com/fluent/40/000000/facebook-new.png" />
                 </a>
               </div>
             </div>

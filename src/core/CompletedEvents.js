@@ -15,39 +15,29 @@ const CompletedEvents = ({ match }) => {
       document.body.style.background = "black";
       document.body.style.display = "";
     });
-  }, []);
+  }, [match.params.folderId, match.params.folderName]);
 
   return (
     <Base>
-      <div className="container text-white">
+      <div className="container">
         <div className=" text-center mt-4 p-4">
-          <h1>{`${match.params.folderName}`}</h1>
+          <h1 className="font-weight-bold text-white">{`${match.params.folderName}`}</h1>
         </div>
         {events &&
           events.length !== 0 &&
           events.map((event, i) => {
             return (
-              <div
-                className="row mt-5 border-left border-right border-bottom"
-                style={{ borderRadius: "10px" }}
-              >
-                <h4
-                  className="col-12 text-center py-2 border-bottom bg-light text-dark"
-                  style={{
-                    borderTopLeftRadius: "10px",
-                    borderTopRightRadius: "10px",
-                  }}
-                >
-                  {event.name}
-                </h4>
-                <div className="col-12 text-center py-3 border-bottom">
-                  <img
-                    src={`https://ieee-srm-sb.herokuapp.com/api/completedevent/photo/${event._id}`}
-                    alt=""
-                  />
-                </div>
-                <div className="col-12 p-3 text-justify">
-                  <h6>{event.description}</h6>
+              <div className="card neon_card">
+                <img
+                  className="card-img-top"
+                  src={`https://ieee-srm-sb.herokuapp.com/api/completedevent/photo/${event._id}`}
+                  alt=""
+                />
+                <div className="card-body">
+                  <h3 className="card-title font-weight-bold text-center ludwig">
+                    {event.name}
+                  </h3>
+                  <p className="card-text text-black">{event.description}</p>
                 </div>
               </div>
             );

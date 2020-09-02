@@ -141,6 +141,7 @@ const Home = ({ history }) => {
           />
         </div>
       </div>
+
       <div className="container-fluid text-white">
         <div className="row" id="about">
           <div className="col-12 text-center">
@@ -171,7 +172,7 @@ const Home = ({ history }) => {
                     </h6>
                   </div>
                 </div>
-                <p className="about-para text-justify">
+                <p className="about-para text-justify mr-3">
                   IEEE SRM is not just any student club rather a prolific
                   student chapter and multitude of the scholarly that aims in
                   advancing technology for Humanity reminds the technology
@@ -187,6 +188,33 @@ const Home = ({ history }) => {
                   projects into furtherance.
                 </p>
               </h6>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <h2 className="text-center font-weight-bold">OUR DOMAINS</h2>
+          </div>
+          <div class="row">
+            <div class="row">
+              <div class="col-xs-2" id="p1">
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <br />
+                Research and Development (R&D)
+              </div>
+              <div class="col-xs-2 col-half-offset" id="p2">
+                Two
+              </div>
+              <div class="col-xs-2 col-half-offset" id="p3">
+                Three
+              </div>
+              <div class="col-xs-2 col-half-offset" id="p4">
+                Four
+              </div>
+              <div class="col-xs-2 col-half-offset" id="p5">
+                Five
+              </div>
+              <div>lorem</div>
             </div>
           </div>
         </div>

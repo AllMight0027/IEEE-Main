@@ -5,9 +5,11 @@ import "../App.css";
 const Type = () => {
   return (
     <div className=" container-fluid text-center ludwig1" id="name">
+      <ReactTypingEffect cursor="" cursorClassName="d-none" staticText="IEEE" />
+      <br />
       <ReactTypingEffect
-        text={["IEEE. Innovate. Edify. Experience. Excel."]} //text=["Hello.", "World!"]
-      />
+        text={[`Innovate. Edify. Experience. Excel.`]}
+      ></ReactTypingEffect>
     </div>
   );
 };

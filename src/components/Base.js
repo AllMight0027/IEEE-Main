@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
-import { ReactComponent as TeamIcon } from "./team.svg";
-import { ReactComponent as EventIcon } from "./event.svg";
 import { useState } from "react";
 import { getAllFolders } from "../core/helper/apicalls";
 import Footer from "./Footer";
@@ -76,6 +74,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                   }}
                 />
               </a>
+
               {history.location.pathname === "/" && (
                 <a
                   className="pl-4 text-white"
@@ -88,7 +87,8 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                     );
                   }}
                 >
-                  <TeamIcon /> About Us
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  About Us
                 </a>
               )}
               {history.location.pathname === "/" && (
@@ -104,7 +104,8 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                     );
                   }}
                 >
-                  <TeamIcon /> Upcoming Events
+                  <i class="fa fa-calendar"></i>
+                  Upcoming Events
                 </a>
               )}
 
@@ -113,12 +114,13 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                 className="pl-4"
                 style={{ paddingTop: "18px" }}
               >
-                <TeamIcon /> Our Team
+                <i class="fa fa-users" aria-hidden="true"></i>
+                Our Team
               </a>
 
               <div className="dropdown pl-2" style={{ paddingTop: "6px" }}>
                 <button className="dropbtn" onClick={myFunction2}>
-                  <EventIcon />
+                  <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                   &nbsp;&nbsp;Events&nbsp;&nbsp;
                   <i className="fa fa-caret-down"></i>
                 </button>

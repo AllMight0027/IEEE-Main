@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 .App {
   text-align: center;
@@ -54,8 +60,6 @@ ul a:hover {
 
 .ludwig1 {
   position: absolute;
-  padding-left: 1em;
-  font-family: "Roboto", serif;
   font-size: 5rem;
   line-height: 1em;
   font-weight: 100;
@@ -79,10 +83,9 @@ ul a:hover {
   position: relative;
   padding-left: 1em;
   border-left: 0.1em solid #4d91b3;
-  font-family: "Roboto", serif;
   font-size: 2em;
-  line-height: 1em;
   font-weight: 100;
+  line-height: 2.5rem;
   margin-bottom: 2rem;
 }
 .ludwig:before,
@@ -128,7 +131,7 @@ ul a:hover {
     text-align: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .img1 {
     height: 75px;
     width: 75px;
@@ -159,4 +162,66 @@ ul a:hover {
   -moz-box-shadow: 2px 2px 2px #000;
   box-shadow: 2px 2px 2px #000;
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 480px) {
+  .h1c {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .poster {
+    margin-left: -22px !important;
+  }
+}
+.card {
+  margin-bottom: 2rem;
+}
+
+.neon_card {
+  /* width: 300px; */
+  /* height: 400px; */
+  background: #000000;
+  /* margin: auto; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.neon_card::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+}
+
+.neon_card::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  z-index: -2;
+  filter: blur(50px);
+}
+
+.poster {
+  margin-left: auto;
+  margin-right: auto !important;
+}
+.fa,
+.fas {
+  margin-right: 5px;
+  font-size: 1.5rem;
 }

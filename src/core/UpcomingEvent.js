@@ -7,7 +7,6 @@ import bg from "../components/Artboard1.png";
 const UpcomingEvent = ({ match }) => {
   const [event, setEvent] = useState({});
   useEffect(() => {
-    document.body.style.backgroundImage = `url(${bg})`;
     document.body.style.backgroundColor = `black`;
 
     document.body.style.display = "none";
@@ -25,12 +24,12 @@ const UpcomingEvent = ({ match }) => {
         <div className=" text-center mt-4 p-4">
           <h1 className="h1c font-weight-bold py-2">{event.name}</h1>
         </div>
-        <div className="row mt-4">
-          <div className="col-xl-6 col-lg-6 col-sm-12 text-center">
+        <div className="row">
+          <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 text-center">
             <img
               src={`https://ieee-srm-sb.herokuapp.com/api/upcomingevent/poster/${event._id}`}
               alt=""
-              className="poster"
+              className="poster mb-4"
               style={{
                 borderRadius: "10px",
               }}
@@ -38,7 +37,7 @@ const UpcomingEvent = ({ match }) => {
             <br />
           </div>
           <div
-            className="col-xl-6 col-lg-6  col-sm-12 text-justify my-auto h5"
+            className="col-xl-6 col-lg-12 col-md-12  col-sm-12 text-justify my-auto h5"
             style={{ lineHeight: "2rem", borderLeft: "solid 5px #4D91B3" }}
           >
             {event.description}
