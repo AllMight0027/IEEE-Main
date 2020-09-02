@@ -239,11 +239,12 @@ const Home = ({ history }) => {
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Robotics and Automation Society 👾</h3>
               <p className="about-para text-justify">
-                Research and Development at IEEE SRM aims to inculcate in its
-                members the desire to find and solve the diverse problems around
-                us, and empowers them with the skill to do so, taking humanity
-                forward, towards a better and more advanced future. We build
-                what we dream.
+                The IEEE Robotics and Automation Society's objectives are
+                scientific, literary and educational in character. The Society
+                strives for the advancement of the theory and practice of
+                robotics and automation engineering and science and of the
+                allied arts and sciences, and for the maintenance of high
+                professional standards among its members.
               </p>
             </div>
           </div>
@@ -258,7 +259,7 @@ const Home = ({ history }) => {
                 of a high professional standing among its members". The field of
                 interest of the IEEE Consumer Electronics Society is engineering
                 and research aspects of the theory, design, construction,
-                manufacture or end use of mass market electronics, systems,
+                manufacture for end use of mass market electronics, systems,
                 software and services for consumers.
               </p>
             </div>
@@ -284,7 +285,9 @@ const Home = ({ history }) => {
                 The Power Electronics Society's main aim is to provide
                 scientific and engineering information on electric power and
                 enery to benefit society and to help the members to be an
-                element of professional development.
+                element of professional development. We are dedicated to
+                upholding the vital scientific and educational aspects of power
+                electronics and its applications.
               </p>
             </div>
           </div>
@@ -292,11 +295,12 @@ const Home = ({ history }) => {
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Women in Engineering 👩‍🎓</h3>
               <p className="about-para text-justify">
-                Research and Development at IEEE SRM aims to inculcate in its
-                members the desire to find and solve the diverse problems around
-                us, and empowers them with the skill to do so, taking humanity
-                forward, towards a better and more advanced future. We build
-                what we dream.
+                IEEE Women in Engineering (WIE) is a global network of IEEE
+                members and volunteers dedicated to promoting women engineers
+                and scientists, and inspiring girls around the world to follow
+                their academic interests in a career in engineering and science.
+                Our goal is to facilitate the recruitment and retention of women
+                in technical disciplines.
               </p>
             </div>
           </div>
