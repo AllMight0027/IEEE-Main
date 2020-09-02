@@ -308,11 +308,14 @@ const Home = ({ history }) => {
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Web and App Development 👨‍💻</h3>
               <p className="about-para text-justify">
-                Research and Development at IEEE SRM aims to inculcate in its
-                members the desire to find and solve the diverse problems around
-                us, and empowers them with the skill to do so, taking humanity
-                forward, towards a better and more advanced future. We build
-                what we dream.
+                The Web/app team at IEEE SRM, we use technologies to deliver
+                value to the end-user, combining all our team's skills to
+                deliver better solutions and results. We help our members to
+                polish their full-stack skills and are always working on
+                something new. Among many other tasks, we also manage the
+                official website of IEEE SRM, which your are viewing right now,
+                keeps it up to date with the growing web interface. This domain
+                is the youngest baby of IEEE SRM SB, founded in 2020.
               </p>
             </div>
           </div>
@@ -320,11 +323,11 @@ const Home = ({ history }) => {
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Sponsorship and Marketing 💰</h3>
               <p className="about-para text-justify">
-                Research and Development at IEEE SRM aims to inculcate in its
-                members the desire to find and solve the diverse problems around
-                us, and empowers them with the skill to do so, taking humanity
-                forward, towards a better and more advanced future. We build
-                what we dream.
+                Sponsorship and marketing at IEEE SRM focuses on the powerful
+                marketing strategy which helps in bringing up meaningful access
+                to our event audience ,creates positive public relations ,allow
+                you to be more creative about how your objectives can be met and
+                raise awareness of the organization as a whole.
               </p>
             </div>
           </div>
