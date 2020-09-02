@@ -37,7 +37,9 @@ const CompletedEvents = ({ match }) => {
                   <h3 className="card-title font-weight-bold text-center ludwig">
                     {event.name}
                   </h3>
-                  <p className="card-text text-black">{event.description}</p>
+                  <p className="card-text text-black text-justify">
+                    {event.description}
+                  </p>
                 </div>
               </div>
             );
