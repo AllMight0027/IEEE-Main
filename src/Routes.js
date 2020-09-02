@@ -4,6 +4,7 @@ import OurTeam from "./core/OurTeam";
 import Home from "./core/Home";
 import UpcomingEvent from "./core/UpcomingEvent";
 import CompletedEvents from "./core/CompletedEvents";
+import OurDomains from "./core/OurDomains";
 
 export default function Routes() {
   return (
@@ -12,6 +13,7 @@ export default function Routes() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/our-team" component={OurTeam} />
+          <Route exact path="/our-domains" component={OurDomains} />
           <Route exact path="/event/:eventId" component={UpcomingEvent} />
           <Route
             exact

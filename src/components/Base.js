@@ -110,6 +110,15 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
               )}
 
               <a
+                href="/our-domains"
+                className="pl-4 mt-2"
+                style={{ paddingTop: "18px" }}
+              >
+                <i class="fa fa-cubes" aria-hidden="true"></i>
+                Domains
+              </a>
+
+              <a
                 href="/our-team"
                 className="pl-4 mt-2"
                 style={{ paddingTop: "18px" }}
