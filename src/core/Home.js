@@ -192,6 +192,34 @@ const Home = ({ history }) => {
           </div>
         </div>
         <div className="row mt-5">
+          <div className="col-12 text-center">
+            <h1 className="font-weight-bold">OUR VISION</h1>
+          </div>
+          <br />
+          <div className="row">
+            <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
+              <h6>
+                <b className="ludwig" style={{ lineHeight: "45px" }}>
+                  Innovate. Edify. Experience. Excel.
+                </b>
+                <p className="about-para text-justify">
+                  IEEE SRM is a prolific student chapter that aims to inspire
+                  professionalism and empower students, help them learn and
+                  implement new skills and technologies, gain exemplary
+                  knowledge through various engaging workshops and webinars,
+                  experience in fields of interest like application and website
+                  development, robotics and automation, consumer and power
+                  electronics, engineering, media, corporate and content
+                  writing, carry out research, publish papers, establish a
+                  professional profile and network with esteemed IEEE alumni
+                  across the globe, and develop projects that greatly benefit
+                  mankind.
+                </p>
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div className="row mt-5">
           <div className="col-12">
             <h1 className="text-center font-weight-bold">OUR DOMAINS</h1>
           </div>
@@ -325,34 +353,6 @@ const Home = ({ history }) => {
             </div>
           </div>
         </div>
-        <div className="row mt-5">
-          <div className="col-12 text-center">
-            <h1 className="font-weight-bold">OUR VISION</h1>
-          </div>
-          <br />
-          <div className="row">
-            <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
-              <h6>
-                <b className="ludwig" style={{ lineHeight: "45px" }}>
-                  Innovate. Edify. Experience. Excel.
-                </b>
-                <p className="about-para text-justify">
-                  IEEE SRM is a prolific student chapter that aims to inspire
-                  professionalism and empower students, help them learn and
-                  implement new skills and technologies, gain exemplary
-                  knowledge through various engaging workshops and webinars,
-                  experience in fields of interest like application and website
-                  development, robotics and automation, consumer and power
-                  electronics, engineering, media, corporate and content
-                  writing, carry out research, publish papers, establish a
-                  professional profile and network with esteemed IEEE alumni
-                  across the globe, and develop projects that greatly benefit
-                  mankind.
-                </p>
-              </h6>
-            </div>
-          </div>
-        </div>
         <div className="row mt-5" id="upevents" style={{ minHeight: "190px" }}>
           <div className="col-12 text-center mt-5">
             <h1 className="font-weight-bold">Upcoming Events</h1>
@@ -426,13 +426,19 @@ const Home = ({ history }) => {
                               </h4>
                             )}
                             {upcomingEvent.from !== upcomingEvent.to && (
-                              <small
-                                class="card-body "
-                                style={{ marginTop: "-27px" }}
+                              <h4
+                                class="card-body h4 text-left"
+                                style={{
+                                  position: "absolute",
+                                  right: "0",
+                                  bottom: "0",
+                                  fontWeight: "bold",
+                                  marginBottom: "-20px",
+                                }}
                               >
-                                From: {upcomingEvent.from}&nbsp;&nbsp;To:{" "}
+                                From: {upcomingEvent.from} <br /> To:{" "}
                                 {upcomingEvent.to}
-                              </small>
+                              </h4>
                             )}
                           </div>
                         </div>

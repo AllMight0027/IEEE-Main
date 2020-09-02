@@ -42,7 +42,7 @@ const UpcomingEvent = ({ match }) => {
             className="col-xl-6 col-lg-12 col-md-12  col-sm-12 text-justify my-auto h5"
             style={{ lineHeight: "2rem", borderLeft: "solid 5px #4D91B3" }}
           >
-            {event.description}
+            <p style={{ fontSize: "1rem" }}>{event.description}</p>
           </div>
         </div>
         {event.registration && (
