@@ -49,7 +49,7 @@ function OurTeam() {
                   </h5>
                   <h6 className="pt-2 ml-xl-5">{members[0].position}</h6>
                 </div>
-                <div className="col-12 text-center">
+                <div className="col-12 text-center ml-xl-4">
                   {members[0].linkedin && (
                     <a
                       href={members[0].linkedin}
