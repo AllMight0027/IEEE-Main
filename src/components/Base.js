@@ -87,8 +87,8 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                     );
                   }}
                 >
-                  <i class="fa fa-question-circle" aria-hidden="true"></i>
-                  About Us
+                  <img src="https://img.icons8.com/ios/28/ffffff/about.png" />
+                  &nbsp;&nbsp;About Us
                 </a>
               )}
               {history.location.pathname === "/" && (
@@ -104,18 +104,18 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                     );
                   }}
                 >
-                  <i class="fa fa-calendar"></i>
-                  Upcoming Events
+                  <img src="https://img.icons8.com/ios/28/ffffff/event-accepted-tentatively.png" />
+                  &nbsp;&nbsp;Upcoming Events
                 </a>
               )}
 
               <a
-                href="/our-domains"
+                href="/domains"
                 className="pl-4 mt-2"
                 style={{ paddingTop: "18px" }}
               >
-                <i class="fa fa-cubes" aria-hidden="true"></i>
-                Domains
+                <img src="https://img.icons8.com/ios/28/ffffff/broadcasting.png" />
+                &nbsp;&nbsp;Domains
               </a>
 
               <a
@@ -123,16 +123,16 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                 className="pl-4 mt-2"
                 style={{ paddingTop: "18px" }}
               >
-                <i class="fa fa-users" aria-hidden="true"></i>
-                Our Team
+                <img src="https://img.icons8.com/ios/28/ffffff/conference.png" />
+                &nbsp;&nbsp;Our Team
               </a>
 
               <div
-                className="dropdown pl-2  mt-2"
+                className="dropdown pl-2  mt-1"
                 style={{ paddingTop: "6px" }}
               >
                 <button className="dropbtn" onClick={myFunction2}>
-                  <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                  <img src="https://img.icons8.com/ios/28/ffffff/today.png" />
                   &nbsp;&nbsp;Events&nbsp;&nbsp;
                   <i className="fa fa-caret-down"></i>
                 </button>

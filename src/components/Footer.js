@@ -15,45 +15,37 @@ function Footer() {
               </div>
               <div className="col-12">
                 <p>
-                  <i className="fa fa-map mr-3"></i> SRMIST - KTR, Tamil Nadu
+                  <img src="https://img.icons8.com/ios/28/ffffff/map-marker.png" />
+                  &emsp; SRMIST - KTR, Tamil Nadu
                 </p>
                 <p>
-                  <i className="fa fa-envelope mr-3"></i>{" "}
+                  <img src="https://img.icons8.com/ios/28/ffffff/composing-mail.png" />
+                  &emsp;
                   <a href="mailto:ieee.srmktr@gmail.com" className="text-white">
-                    ieee@srmuniv.edu.in&nbsp;&emsp;&emsp;
+                    ieee@srmist.edu.in&nbsp;&emsp;&emsp;&emsp;
                   </a>
                 </p>
               </div>
               <div className="col-12 text-center text-white pb-3">
                 {" "}
                 <a
-                  href="https://twitter.com/ieeesrmist"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://img.icons8.com/fluent/39/000000/twitter.png"
-                    className="mr-2"
-                  />
-                </a>
-                <a
-                  href="https://github.com/IEEE-SRM-Student-Branch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://img.icons8.com/fluent/42/000000/github.png"
-                    className="mr-2"
-                  />
-                </a>
-                <a
                   href="https://www.linkedin.com/company/ieeesrmist/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://img.icons8.com/office/38/000000/linkedin.png"
-                    className="mr-2"
+                    src="https://img.icons8.com/ios/38/ffffff/linkedin.png"
+                    className="mr-1"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/ieeesrmist"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://img.icons8.com/ios/38/ffffff/twitter-circled.png"
+                    className="mr-1"
                   />
                 </a>
                 <a
@@ -62,8 +54,18 @@ function Footer() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://img.icons8.com/fluent/40/000000/instagram-new.png"
-                    className="mr-2"
+                    src="https://img.icons8.com/ios/38/ffffff/instagram-new.png"
+                    className="mr-1"
+                  />
+                </a>
+                <a
+                  href="https://github.com/IEEE-SRM-Student-Branch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://img.icons8.com/ios/38/ffffff/github.png"
+                    className="mr-1"
                   />
                 </a>
                 <a
@@ -71,7 +73,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://img.icons8.com/fluent/39/000000/facebook-new.png" />
+                  <img src="https://img.icons8.com/ios/38/ffffff/facebook.png" />
                 </a>
               </div>
             </div>

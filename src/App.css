@@ -102,6 +102,13 @@ ul a:hover {
   font-weight: 1rem;
   margin-top: 2rem;
 }
+
+.event-para {
+  line-height: 1.5rem;
+  font-weight: 1rem;
+  margin-top: 2rem;
+}
+
 .img1 {
   height: 150px;
   width: 150px;
@@ -173,9 +180,13 @@ ul a:hover {
     width: 100% !important;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .poster {
-    margin-left: -22px !important;
+    margin-left: -21px !important;
+  }
+  .event-para {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 .card {
@@ -291,7 +302,7 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 1018px) {
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
@@ -302,7 +313,7 @@ body {
   }
 }
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 1018px) {
   .topnav.responsive {
     position: relative;
   }

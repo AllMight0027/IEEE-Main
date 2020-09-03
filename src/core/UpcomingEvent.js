@@ -40,9 +40,9 @@ const UpcomingEvent = ({ match }) => {
           </div>
           <div
             className="col-xl-6 col-lg-12 col-md-12  col-sm-12 text-justify my-auto h5"
-            style={{ lineHeight: "2rem", borderLeft: "solid 5px #4D91B3" }}
+            style={{ borderLeft: "solid 5px #4D91B3" }}
           >
-            <p style={{ fontSize: "1.1rem" }}>{event.description}</p>
+            <p className="event-para">{event.description}</p>
           </div>
         </div>
         {event.registration && (

@@ -13,7 +13,7 @@ export default function Routes() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/our-team" component={OurTeam} />
-          <Route exact path="/our-domains" component={OurDomains} />
+          <Route exact path="/domains" component={OurDomains} />
           <Route exact path="/event/:eventId" component={UpcomingEvent} />
           <Route
             exact

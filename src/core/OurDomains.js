@@ -99,14 +99,14 @@ const OurDomains = () => {
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Web and App Development 👨‍💻</h3>
               <p className="about-para text-justify">
-                The Web/app team at IEEE SRM, we use technologies to deliver
-                value to the end-user, combining all our team's skills to
-                deliver better solutions and results. We help our members to
-                polish their full-stack skills and are always working on
-                something new. Among many other tasks, we also manage the
-                official website of IEEE SRM, which your are viewing right now,
-                keeps it up to date with the growing web interface. This domain
-                is the youngest baby of IEEE SRM SB, founded in 2020.
+                We, the Full Stack Developers at IEEE, aim to deliver value to
+                our users by incorporating high-end technologies with the team's
+                skills to provide cognitive solutions. We assist our members to
+                bring about advancements in technical skills and facilitate
+                innovativeness. We also manage all the social media handles of
+                IEEE SRM keeping it new-fangled and fresh along with furtherance
+                across various interfaces. This domain is a juvenile team of the
+                quick-witted at IEEE SRM SB, founded this very year, 2020.
               </p>
             </div>
           </div>
