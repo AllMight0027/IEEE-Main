@@ -86,12 +86,12 @@ const OurDomains = () => {
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Women in Engineering 👩‍🎓</h3>
               <p className="about-para text-justify">
-                IEEE Women in Engineering (WIE) is a global network of IEEE
-                members and volunteers dedicated to promoting women engineers
-                and scientists, and inspiring girls around the world to follow
-                their academic interests in a career in engineering and science.
-                Our goal is to facilitate the recruitment and retention of women
-                in technical disciplines.
+                Women in Engineering (WIE) at IEEE SRM is dedicated to promoting
+                women engineers and inspiring girls to follow their academic
+                interests to a career in engineering by encouraging them,
+                guiding them and celebrating their achievements. IEEE WIE
+                members make lifelong friendships, acquire influential mentors,
+                and make a difference for the benefit of humanity.
               </p>
             </div>
           </div>
