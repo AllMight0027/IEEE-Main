@@ -49,6 +49,44 @@ function OurTeam() {
                   </h5>
                   <h6 className="pt-2 ml-xl-5">{members[0].position}</h6>
                 </div>
+                <div className="col-12 text-center">
+                  {members[0].linkedin && (
+                    <a
+                      href={members[0].linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/linkedin-circled.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                  {members[0].github && (
+                    <a
+                      href={members[0].github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/github.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                  {members[0].twitter && (
+                    <a
+                      href={members[0].twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/twitter-circled.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                </div>
               </div>
               <div className="col-xl-6 col-sm-12 col-md-6 text-center">
                 <div className="mt-4">
@@ -64,6 +102,44 @@ function OurTeam() {
                   <br />
                   <h5 className="pt-4">{members[1].name}</h5>
                   <h6 className="pt-2">{members[1].position}</h6>
+                </div>
+                <div className="col-12 text-center">
+                  {members[1].linkedin && (
+                    <a
+                      href={members[1].linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/linkedin-circled.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                  {members[1].github && (
+                    <a
+                      href={members[1].github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/github.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                  {members[1].twitter && (
+                    <a
+                      href={members[1].twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/twitter-circled.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -87,6 +163,44 @@ function OurTeam() {
                     <br />
                     <h5 className="pt-4">{member.name}</h5>
                     <h6 className="pt-2">{member.position}</h6>
+                  </div>
+                  <div className="col-12 text-center">
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://img.icons8.com/ios/38/000000/linkedin-circled.png"
+                          className="mr-1"
+                        />
+                      </a>
+                    )}
+                    {member.github && (
+                      <a
+                        href={member.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://img.icons8.com/ios/38/000000/github.png"
+                          className="mr-1"
+                        />
+                      </a>
+                    )}
+                    {member.twitter && (
+                      <a
+                        href={member.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://img.icons8.com/ios/38/000000/twitter-circled.png"
+                          className="mr-1"
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               );
