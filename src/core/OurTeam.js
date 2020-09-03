@@ -44,7 +44,7 @@ function OurTeam() {
                     className="ml-xl-5"
                   />
                   <br />
-                  <h5 className="pt-4 text-nowrap ml-xl-4">
+                  <h5 className="pt-4 text-nowrap ml-xl-3">
                     {members[0].name}
                   </h5>
                   <h6 className="pt-2 ml-xl-5">{members[0].position}</h6>
