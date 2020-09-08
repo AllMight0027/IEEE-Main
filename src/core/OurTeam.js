@@ -147,7 +147,7 @@ function OurTeam() {
 
           <div className="row pt-4">
             {members.map((member, index) => {
-              if (index === 0 || index === 1) return;
+              if (index === 0 || index === 1 || index === 11) return;
               return (
                 <div className="col-xl-4 col-sm-12 col-md-6 text-center">
                   <div className="mt-4">
@@ -206,6 +206,64 @@ function OurTeam() {
               );
             })}
           </div>
+          {members && members[11] && (
+            <div className="row pt-4">
+              <div className="col-12 text-center">
+                <div className="mt-4">
+                  <img
+                    src={`https://ieee-srm-sb.herokuapp.com/api/member/photo/${members[11]._id}`}
+                    alt=""
+                    style={{
+                      maxHeight: "200px",
+                      borderRadius: "50%",
+                      boxShadow: "5px 5px 5px grey",
+                    }}
+                  />
+                  <br />
+                  <h5 className="pt-4">{members[11].name}</h5>
+                  <h6 className="pt-2">{members[11].position}</h6>
+                </div>
+                <div className="col-12 text-center">
+                  {members[11].linkedin && (
+                    <a
+                      href={members[11].linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/linkedin-circled.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                  {members[11].github && (
+                    <a
+                      href={members[11].github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/github.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                  {members[11].twitter && (
+                    <a
+                      href={members[11].twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/twitter-circled.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Base>
