@@ -86,6 +86,18 @@ function OurTeam() {
                       />
                     </a>
                   )}
+                  {members[0].portfolio && (
+                    <a
+                      href={members[0].portfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/user-male-circle.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
                 </div>
               </div>
               <div className="col-xl-6 col-sm-12 col-md-6 text-center">
@@ -136,6 +148,18 @@ function OurTeam() {
                     >
                       <img
                         src="https://img.icons8.com/ios/38/000000/twitter-circled.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                  {members[1].portfolio && (
+                    <a
+                      href={members[1].portfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/user-male-circle.png"
                         className="mr-1"
                       />
                     </a>
@@ -201,6 +225,18 @@ function OurTeam() {
                         />
                       </a>
                     )}
+                    {member.portfolio && (
+                      <a
+                        href={member.portfolio}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://img.icons8.com/ios/38/000000/user-male-circle.png"
+                          className="mr-1"
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               );
@@ -256,6 +292,18 @@ function OurTeam() {
                     >
                       <img
                         src="https://img.icons8.com/ios/38/000000/twitter-circled.png"
+                        className="mr-1"
+                      />
+                    </a>
+                  )}
+                  {members[11].portfolio && (
+                    <a
+                      href={members[11].portfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/ios/38/000000/user-male-circle.png"
                         className="mr-1"
                       />
                     </a>

@@ -225,11 +225,13 @@ const Home = ({ history }) => {
             <h1 className="font-weight-bold">Upcoming Events</h1>
           </div>
           <br />
-          {upcomingEvents && upcomingEvents.length === 0 && (
-            <div className=" col-12 mt-4 text-center">
-              <LoadingIcon />
-            </div>
-          )}
+          {upcomingEvents &&
+            !upcomingEvents.error &&
+            upcomingEvents.length === 0 && (
+              <div className=" col-12 mt-4 text-center">
+                <LoadingIcon />
+              </div>
+            )}
           {upcomingEvents && upcomingEvents.error && (
             <div className=" col-12 mt-4 text-center">
               <h5>
@@ -238,6 +240,7 @@ const Home = ({ history }) => {
             </div>
           )}
           {upcomingEvents &&
+            !upcomingEvents.error &&
             upcomingEvents.length !== 0 &&
             upcomingEvents.map((upcomingEvent, i) => {
               return (
