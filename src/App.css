@@ -24,6 +24,8 @@ body {
 }
 .example {
   position: absolute !important;
+  padding: 0;
+  margin-left: -50px;
 }
 ul {
   list-style: none;
@@ -56,6 +58,10 @@ ul a:hover {
 /* Nav styling */
 .navc {
   margin-left: auto !important;
+}
+
+.particles {
+  /* width: 80%; */
 }
 
 .ludwig1 {
@@ -98,9 +104,10 @@ ul a:hover {
   content: "\201D";
 }
 .about-para {
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   font-weight: 1rem;
   margin-top: 2rem;
+  text-align: left;
 }
 
 .event-para {

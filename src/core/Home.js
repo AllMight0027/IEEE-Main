@@ -23,17 +23,13 @@ const Home = ({ history }) => {
 
   return (
     <Base>
-      <div
-        className="container-fluid particles"
-        style={{ height: "100vh" }}
-        id="type"
-      >
+      <div className="particles" style={{ height: "100vh" }} id="type">
         <Type />
         <div className="">
           <Particles
             canvasClassName="example"
             height="100vh"
-            width="90%"
+            width="120%"
             params={{
               particles: {
                 number: {
@@ -175,7 +171,7 @@ const Home = ({ history }) => {
                     </h6>
                   </div>
                 </div>
-                <p className="about-para text-justify">
+                <p className="about-para">
                   IEEE SRM is not just any student club rather a prolific
                   student chapter and multitude of the scholarly that aims in
                   advancing technology for Humanity reminds the technology
@@ -205,7 +201,7 @@ const Home = ({ history }) => {
                 <b className="ludwig" style={{ lineHeight: "45px" }}>
                   Innovate. Edify. Experience. Excel.
                 </b>
-                <p className="about-para text-justify">
+                <p className="about-para">
                   IEEE SRM is a prolific student chapter that aims to inspire
                   professionalism and empower students, help them learn and
                   implement new skills and technologies, gain exemplary
