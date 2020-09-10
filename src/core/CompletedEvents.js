@@ -34,10 +34,10 @@ const CompletedEvents = ({ match }) => {
                   alt=""
                 />
                 <div className="card-body">
-                  <h3 className="card-title font-weight-bold text-center ludwig">
+                  <h3 className="card-title font-weight-bold text-center ludwig px-2">
                     {event.name}
                   </h3>
-                  <p className="card-text text-black text-justify">
+                  <p className="card-text text-black text-left px-2">
                     {event.description}
                   </p>
                 </div>

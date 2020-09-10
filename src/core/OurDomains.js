@@ -17,7 +17,7 @@ const OurDomains = () => {
           <div className="row" style={{ marginTop: "50px" }}>
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Research and Development 🚀</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 Research and Development at IEEE SRM aims to inculcate in its
                 members the desire to find and solve the diverse problems around
                 us, and empowers them with the skill to do so, taking humanity
@@ -29,7 +29,7 @@ const OurDomains = () => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Robotics and Automation Society 👾</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 The IEEE Robotics and Automation Society's objectives are
                 scientific, literary and educational in character. The Society
                 strives for the advancement of the theory and practice of
@@ -42,7 +42,7 @@ const OurDomains = () => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Consumer Electronics Society ⚡</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 The IEEE Consumer Electronics Society is a professional society
                 of the IEEE that focuses on the "theory and practice of
                 Electronic Engineering and of the allied arts and sciences with
@@ -58,7 +58,7 @@ const OurDomains = () => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Industrial Applications Society 🏭</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 The Industry Applications Society, as a transnational
                 organization, is interested in advancement of the theory and
                 practice of electrical and electronic engineering in the
@@ -72,7 +72,7 @@ const OurDomains = () => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Power Electronics Society 🔌</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 The Power Electronics Society's main aim is to provide
                 scientific and engineering information on electric power and
                 enery to benefit society and to help the members to be an
@@ -85,7 +85,7 @@ const OurDomains = () => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Women in Engineering 👩‍🎓</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 Women in Engineering (WIE) at IEEE SRM is dedicated to promoting
                 women engineers and inspiring girls to follow their academic
                 interests to a career in engineering by encouraging them,
@@ -98,7 +98,7 @@ const OurDomains = () => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Web and App Development 👨‍💻</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 We, the Full Stack Developers at IEEE, aim to deliver value to
                 our users by incorporating high-end technologies with the team's
                 skills to provide cognitive solutions. We assist our members to
@@ -113,7 +113,7 @@ const OurDomains = () => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Sponsorship and Marketing 💰</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 Sponsorship and marketing at IEEE SRM focuses on the powerful
                 marketing strategy which helps in bringing up meaningful access
                 to our event audience ,creates positive public relations ,allow
@@ -125,7 +125,7 @@ const OurDomains = () => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Media and Content 📝</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 Media and Content Team at IEEE SRM also known as the face of
                 IEEE. The team comprises of the most outwit Content Writers and
                 can amuse you with their remarkable use of word power. Along
@@ -138,7 +138,7 @@ const OurDomains = () => {
           <div className="row">
             <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4 text-center">
               <h3>Corporate, Logistics and Publicity 📢</h3>
-              <p className="about-para text-justify">
+              <p className="about-para text-center">
                 Corporate, Logistics and Publicity Team at IEEE SRM is the brain
                 of IEEE. The team provides optimistic strategies and plans the
                 implementation for all other domains with it's creative ideas.
