@@ -149,7 +149,7 @@ const Home = ({ history }) => {
           </div>
           <br />
           <div className="row">
-            <div className="col-md-6 text-center">
+            <div className="col-lg-6 text-center">
               <img
                 src={require("./Asset 1.png")}
                 alt=""
@@ -160,7 +160,10 @@ const Home = ({ history }) => {
                 }}
               />
             </div>
-            <div className="col-md-5 mt-4 pr-md-4" id="about-text">
+            <div
+              className="col-lg-5 offset-lg-0 offset-sm-1 col-sm-10 mt-4 pr-md-4"
+              id="about-text"
+            >
               <h6>
                 <div className="row">
                   <div className="col-11 text-center">
