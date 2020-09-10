@@ -175,7 +175,7 @@ const Home = ({ history }) => {
                     </h6>
                   </div>
                 </div>
-                <p className="about-para text-justify mr-3">
+                <p className="about-para text-justify">
                   IEEE SRM is not just any student club rather a prolific
                   student chapter and multitude of the scholarly that aims in
                   advancing technology for Humanity reminds the technology
