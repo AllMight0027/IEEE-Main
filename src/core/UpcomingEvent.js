@@ -64,7 +64,7 @@ const UpcomingEvent = ({ match }) => {
           <div className="row">
             <div className="col-12 text-center">
               <h5 className="mt-4 text-danger font-weight-bold">
-                REGISTERATION CLOSED
+                REGISTRATION CLOSED
               </h5>
             </div>
           </div>
