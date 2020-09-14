@@ -23,7 +23,11 @@ const Home = ({ history }) => {
 
   return (
     <Base>
-      <div className="particles" style={{ height: "100vh" }} id="type">
+      <div
+        className="particles"
+        style={{ height: "100vh", position: "relative" }}
+        id="type"
+      >
         <Type />
         <div className="">
           <Particles

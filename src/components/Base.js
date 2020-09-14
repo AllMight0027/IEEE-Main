@@ -59,25 +59,50 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
           window.scrollTo(0, 0);
         }}
       />
-      <div className="container-fluid">
-        <div className="row" style={{ backgroundColor: "black" }}>
-          <div className="col-12">
-            <div className="topnav" id="myTopnav">
-              <a style={{ marginLeft: "-20px" }}>
-                <img
-                  title="Home"
-                  src={require("./black.png")}
-                  alt="LOGO"
-                  style={{ maxHeight: "75px", cursor: "pointer" }}
-                  onClick={() => {
-                    history.push("/");
-                  }}
-                />
-              </a>
+      <nav
+        className="navbar navbar-expand-lg navbar-dark"
+        style={{ zIndex: 1000 }}
+      >
+        <div className="d-flex flex-grow-1">
+          <span className="w-100 d-lg-none d-block">
+            {/*<!-- hidden spacer to center brand on mobile -->*/}
+          </span>
+          <a style={{ marginLeft: "-20px" }}>
+            <img
+              title="Home"
+              src={require("./black.png")}
+              alt="LOGO"
+              style={{ maxHeight: "75px", cursor: "pointer" }}
+              onClick={() => {
+                history.push("/");
+              }}
+            />
+          </a>
+          <div className="w-100 text-right">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#topbar"
+              style={{
+                top: "50%",
+                transform: "translateY(45%)",
+              }}
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
 
+        <div
+          class="collapse navbar-collapse flex-grow-1 text-right"
+          id="topbar"
+        >
+          <ul class="navbar-nav ml-auto flex-nowrap text-left">
+            <li class="nav-item">
               {history.location.pathname === "/" && (
                 <a
-                  className="pl-4 mt-2 text-white"
+                  className="text-white nav-link"
                   style={{ paddingTop: "18px", cursor: "pointer" }}
                   onClick={() => {
                     window.scrollTo(
@@ -91,9 +116,11 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                   &nbsp;&nbsp;About Us
                 </a>
               )}
+            </li>
+            <li class="nav-item">
               {history.location.pathname === "/" && (
                 <a
-                  className="pl-4 text-white mt-2"
+                  className="text-white nav-link"
                   style={{ paddingTop: "18px", cursor: "pointer" }}
                   onClick={() => {
                     window.scrollTo(
@@ -108,63 +135,63 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                   &nbsp;&nbsp;Upcoming Events
                 </a>
               )}
-
+            </li>
+            <li class="nav-item">
               <a
                 href="/domains"
-                className="pl-4 mt-2"
+                className="text-white nav-link"
                 style={{ paddingTop: "18px" }}
               >
                 <img src="https://img.icons8.com/ios/28/ffffff/broadcasting.png" />
                 &nbsp;&nbsp;Domains
               </a>
-
+            </li>
+            <li class="nav-item">
               <a
                 href="/our-team"
-                className="pl-4 mt-2"
+                className="text-white nav-link"
                 style={{ paddingTop: "18px" }}
               >
                 <img src="https://img.icons8.com/ios/28/ffffff/conference.png" />
                 &nbsp;&nbsp;Our Team
               </a>
-
-              <div
-                className="dropdown pl-2  mt-1"
-                style={{ paddingTop: "6px" }}
-              >
-                <button className="dropbtn" onClick={myFunction2}>
-                  <img src="https://img.icons8.com/ios/28/ffffff/today.png" />
-                  &nbsp;&nbsp;Events&nbsp;&nbsp;
-                  <i className="fa fa-caret-down"></i>
-                </button>
-                <div className="dropdown-content" id="myDropdown">
-                  {folders &&
-                    folders.length !== 0 &&
-                    folders.map((folder, i) => {
-                      return (
-                        <a
-                          key={`~${i}`}
-                          href={`/previous-events/${folder.name}/${folder._id}`}
-                          className="ml-3"
-                          style={{ fontSize: "15px" }}
-                        >
-                          {folder.name}
-                        </a>
-                      );
-                    })}
-                </div>
-              </div>
+            </li>
+            <li class="nav-item dropdown">
               <a
-                style={{ fontSize: "20px", color: "white" }}
-                className="icon pt-4"
-                onClick={() => {
-                  myFunction();
-                }}
+                className="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style={{ paddingTop: "18px" }}
               >
-                &#9776;
+                <img src="https://img.icons8.com/ios/28/ffffff/today.png" />
+                &nbsp;&nbsp;Events&nbsp;&nbsp;
               </a>
-            </div>
-          </div>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                {folders &&
+                  folders.length !== 0 &&
+                  folders.map((folder, i) => {
+                    return (
+                      <a
+                        key={`~${i}`}
+                        href={`/previous-events/${folder.name}/${folder._id}`}
+                        className="dropdown-item"
+                      >
+                        {folder.name}
+                      </a>
+                    );
+                  })}
+              </div>
+            </li>
+          </ul>
         </div>
+      </nav>
+      <div className="container-fluid">
         <div className={className}>{children}</div>
       </div>
       <Footer></Footer>
