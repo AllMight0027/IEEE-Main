@@ -61,7 +61,7 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
       />
       <nav
         className="navbar navbar-expand-lg navbar-dark"
-        style={{ zIndex: 1000 }}
+        style={{ zIndex: 1000, backgroundColor: "black" }}
       >
         <div className="d-flex flex-grow-1">
           <span className="w-100 d-lg-none d-block">

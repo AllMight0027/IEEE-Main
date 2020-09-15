@@ -241,10 +241,9 @@ function OurTeam() {
                 </div>
               );
             })}
-          </div>
-          {members && members[11] && (
-            <div className="row pt-4">
-              <div className="col-12 text-center">
+
+            {members && members[11] && (
+              <div className="col-xl-12 col-sm-12 col-md-6 text-center">
                 <div className="mt-4">
                   <img
                     src={`https://ieee-srm-sb.herokuapp.com/api/member/photo/${members[11]._id}`}
@@ -310,8 +309,8 @@ function OurTeam() {
                   )}
                 </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </Base>
