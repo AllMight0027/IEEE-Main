@@ -34,20 +34,20 @@ const CoC = () => {
         <br />• Being respectful of differing viewpoints and experiences. <br />
         • Gracefully accepting constructive criticism. <br />• Referring to
         people by their preferred pronouns and using gender- neutral pronouns
-        when uncertain. Examples of unacceptable behaviour by participants
-        include: <br />• Trolling, insulting/derogatory comments, public or
-        private harassment. <br />• Publishing others' private information, such
-        as a physical or electronic address, without explicit permission. <br />
-        • Not being respectful to reasonable communication boundaries, such as
-        'leave me alone,' 'go away,' or 'I’m not discussing this with you.'{" "}
-        <br />• The usage of sexualised language or imagery and unwelcome sexual
-        attention or advances. <br />• Swearing, usage of strong or disturbing
-        language. <br />• Demonstrating the graphics or any other content you
-        know may be considered disturbing. <br />• Starting and/or participating
-        in arguments related to politics. <br />• Assuming or promoting any kind
-        of inequality including but not limited to: age, body size, disability,
-        ethnicity, expression, nationality and race, personal appearance,
-        religion, or sexual identity and orientation.
+        when uncertain. <br /> Examples of unacceptable behaviour by
+        participants include: <br />• Trolling, insulting/derogatory comments,
+        public or private harassment. <br />• Publishing others' private
+        information, such as a physical or electronic address, without explicit
+        permission. <br />• Not being respectful to reasonable communication
+        boundaries, such as 'leave me alone,' 'go away,' or 'I’m not discussing
+        this with you.' <br />• The usage of sexualised language or imagery and
+        unwelcome sexual attention or advances. <br />• Swearing, usage of
+        strong or disturbing language. <br />• Demonstrating the graphics or any
+        other content you know may be considered disturbing. <br />• Starting
+        and/or participating in arguments related to politics. <br />• Assuming
+        or promoting any kind of inequality including but not limited to: age,
+        body size, disability, ethnicity, expression, nationality and race,
+        personal appearance, religion, or sexual identity and orientation.
         <br />• Drug promotion of any kind. <br />• Attacking personal tastes.{" "}
         <br />• Other conduct which any prudent person would reasonably consider
         inappropriate in a professional setting.
