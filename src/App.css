@@ -179,7 +179,7 @@ ul a:hover {
 
 @media screen and (max-width: 480px) {
   .h1c {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .btn {

@@ -59,6 +59,16 @@ function Footer() {
                   />
                 </a>
                 <a
+                  href="https://www.medium.com/ieeesrmist/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://img.icons8.com/ios/40/ffffff/medium.png"
+                    className="mr-1"
+                  />
+                </a>
+                <a
                   href="https://github.com/IEEE-SRM-Student-Branch"
                   target="_blank"
                   rel="noopener noreferrer"
