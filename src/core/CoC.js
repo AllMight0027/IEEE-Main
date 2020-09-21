@@ -14,10 +14,9 @@ const CoC = () => {
         </div>
       </div>
 
-      <div className="row mb-4">
-        <b>Code of Conduct</b>
-        All participants of IEEE SRM SB are expected to abide by our Code of
-        Conduct, both online and during in-person events that are hosted and/or
+      <div className="row mt-5 mb-4">
+        All participants of IEEE SRM SB are to abide by our Code of Conduct,
+        both online and during in-person events that are hosted and/or
         associated with IEEE SRM SB. <br />
         <br />
         <b>The Pledge</b>
