@@ -130,12 +130,30 @@ function Footer() {
         Made with <span class="heart">❤️️</span> by IEEE SRM SB
         <br />
         <a
+          href="/disclaimer"
+          className="text-muted"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <small> Disclaimer </small>
+        </a>
+        <br />
+        <a
           href="/codeofconduct"
           className="text-muted"
           target="_blank"
           rel="noopener noreferrer"
         >
           <small> Code of Conduct </small>
+        </a>
+        <br />
+        <a
+          href="/privacypolicy"
+          className="text-muted"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <small> Privacy Policy </small>
         </a>
       </div>
     </footer>
