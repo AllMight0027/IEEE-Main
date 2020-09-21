@@ -118,6 +118,15 @@ function Footer() {
 
       <div className="footer-copyright text-white text-center py-3">
         Made with <span class="heart">❤️️</span> by IEEE SRM SB
+        <br />
+        <a
+          href="/codeofconduct"
+          className="text-muted"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <small> Code of Conduct </small>
+        </a>
       </div>
     </footer>
   );
