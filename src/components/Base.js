@@ -156,6 +156,24 @@ const Base = ({ className = "text-dark p-4", children, history }) => {
                 &nbsp;&nbsp;Our Team
               </a>
             </li>
+            <li class="nav-item">
+              <a
+                href="https://concepto.ieeesrmist.in/"
+                className="text-white nav-link"
+                style={{ paddingTop: "18px" }}
+              >
+                <img
+                  src={require("./concepto.png")}
+                  style={{
+                    maxHeight: "100px",
+                    marginTop: "-38px",
+                    marginLeft: "-18px",
+                    marginRight: "-18px",
+                    marginBottom: "-38px",
+                  }}
+                />
+              </a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle text-white"
