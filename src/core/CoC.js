@@ -59,21 +59,30 @@ const CoC = () => {
           <br />
           <br />
           <b>Enforcement</b>
-          <br />
-          No member shall use organisation assets for any personal gain or
-          publish any official document(s) / resource(s) without due
+          <br />• No member shall use organisation assets for any personal gain
+          or publish any official document(s) / resource(s) without due
           authorization.
-          <br />
-          Violations of the Code of Conduct may be reported by sending an email
-          to ieee@srmist.edu.in. All reports will be reviewed and investigated
-          and will result in a response that is deemed necessary and appropriate
-          to the circumstances. Further details of specific enforcement policies
-          may be posted separately.
-          <br /> We hold the right and responsibility to remove comments or
+          <br />• Violations of the Code of Conduct may be reported by sending
+          an email to <a href="mailto:ieee@srmist.edu.in">ieee@srmist.edu.in</a>
+          . All reports will be reviewed and investigated and will result in a
+          response that is deemed necessary and appropriate to the
+          circumstances. Further details of specific enforcement policies may be
+          posted separately.
+          <br />• We hold the right and responsibility to remove comments or
           other contributions that are not aligned to this Code of Conduct, or
           to ban temporarily or permanently any members for other behaviours
-          that we deem inappropriate, threatening, offensive, or harmful. <br />
-          <br /> <b> Last updated on September 16, 2020</b>
+          that we deem inappropriate, threatening, offensive, or harmful.
+          <br />• Members who would like to leave IEEE SRM SB for any reason
+          whatsoever are required to provide 3 days notice to their head prior
+          to leaving and must submit a resignation email to{" "}
+          <a href="mailto:ieee@srmist.edu.in">ieee@srmist.edu.in</a> <br />• The
+          notice period will start once a member sends their resignation email
+          to <a href="mailto:ieee@srmist.edu.in">ieee@srmist.edu.in</a>
+          <br />• Team Members are strictly advised to avoid sharing sensitive
+          information about IEEE, in violation of which disciplinary action
+          shall be taken.
+          <br />
+          <br /> <b> Last updated on September 29, 2020</b>
         </div>
       </div>
     </div>
