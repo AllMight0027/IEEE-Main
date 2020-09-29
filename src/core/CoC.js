@@ -38,7 +38,7 @@ const CoC = () => {
           <br />
           • Gracefully accepting constructive criticism. <br />• Referring to
           people by their preferred pronouns and using gender- neutral pronouns
-          when uncertain. <br /> Examples of unacceptable behaviour by
+          when uncertain. <br /> <br /> Examples of unacceptable behaviour by
           participants include: <br />• Trolling, insulting/derogatory comments,
           public or private harassment. <br />• Publishing others' private
           information, such as a physical or electronic address, without
