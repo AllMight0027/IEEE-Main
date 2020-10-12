@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const Privacy = () => {
   useEffect(() => {
-    document.title = "Disclaimer";
+    document.title = "Privacy Policy";
     document.body.style.backgroundColor = "white";
   });
   return (

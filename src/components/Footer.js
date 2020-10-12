@@ -15,11 +15,11 @@ function Footer() {
               </div>
               <div className="col-12">
                 <p>
-                  <img src="https://img.icons8.com/ios/28/ffffff/map-marker.png" />
+                  <img src="https://img.icons8.com/ios/150/ffffff/map-marker.png" style={{height:'28px'}} />
                   &emsp; SRMIST - KTR, Tamil Nadu
                 </p>
                 <p>
-                  <img src="https://img.icons8.com/ios/28/ffffff/composing-mail.png" />
+                  <img src="https://img.icons8.com/ios/150/ffffff/composing-mail.png" style={{height:'28px'}} />
                   &emsp;
                   <a href="mailto:ieee.srmktr@gmail.com" className="text-white">
                     ieee@srmist.edu.in&nbsp;&emsp;&emsp;&emsp;
@@ -34,8 +34,9 @@ function Footer() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://img.icons8.com/ios/38/ffffff/linkedin.png"
+                    src="https://img.icons8.com/ios/150/ffffff/linkedin.png"
                     className="mr-1"
+                    style={{height:'38px'}}
                   />
                 </a>
                 <a
@@ -44,8 +45,9 @@ function Footer() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://img.icons8.com/ios/38/ffffff/twitter-circled.png"
+                    src="https://img.icons8.com/ios/150/ffffff/twitter-circled.png"
                     className="mr-1"
+                    style={{height:'38px'}}
                   />
                 </a>
                 <a
@@ -54,8 +56,9 @@ function Footer() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://img.icons8.com/ios/38/ffffff/instagram-new.png"
+                    src="https://img.icons8.com/ios/150/ffffff/instagram-new.png"
                     className="mr-1"
+                    style={{height:'38px'}}
                   />
                 </a>
                 <a
@@ -64,8 +67,9 @@ function Footer() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://img.icons8.com/ios/40/ffffff/medium.png"
+                    src="https://img.icons8.com/ios/150/ffffff/medium.png"
                     className="mr-1"
+                    style={{height:'40px'}}
                   />
                 </a>
                 <a
@@ -74,8 +78,9 @@ function Footer() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://img.icons8.com/ios/38/ffffff/github.png"
+                    src="https://img.icons8.com/ios/150/ffffff/github.png"
                     className="mr-1"
+                    style={{height:'38px'}}
                   />
                 </a>
                 <a
@@ -83,7 +88,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://img.icons8.com/ios/38/ffffff/facebook.png" />
+                  <img src="https://img.icons8.com/ios/150/ffffff/facebook.png" style={{height:'38px'}} />
                 </a>
               </div>
             </div>

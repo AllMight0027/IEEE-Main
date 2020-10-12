@@ -223,7 +223,7 @@ const Home = ({ history }) => {
           </div>
         </div>
 
-        <div className="row mt-5" id="upevents" style={{ minHeight: "190px" }}>
+        <div className="row mt-5" id="upcoming-events" style={{ minHeight: "190px" }}>
           <div className="col-12 text-center mt-5">
             <h1 className="font-weight-bold">Upcoming Events</h1>
           </div>
@@ -322,6 +322,43 @@ const Home = ({ history }) => {
               );
             })}
           <div className=" offset-sm-1 col-sm-10 mt-4 pl-sm-4"></div>
+        </div>
+        <div className="row">
+          <div className="col-12 text-center mt-5">
+            <h1 className="font-weight-bold">Our Sponsors</h1>
+          </div>
+          <div className="col-12 text-center">
+            <a
+              href="https://www.dennetworks.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={require("./DEN Logo.png")}
+                style={{
+                  width: "200px",
+                  marginLeft: "0px",
+                  marginTop:'20px'
+                }}
+              />
+            </a>{" "}
+            <h6 style={{  marginLeft: "0px", marginTop:'10px' }}>
+              Domain Sponsor
+            </h6>
+          </div>
+          {/*<div
+            className="col-12 text-center sponsor"
+            style={{ marginTop: "-80px" }}
+          >
+            <button className="pass">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeRGp6GhgJdspfvYZVDLqUqyyK4kfdRVdCNTeGGVhdkGr0RwQ/viewform"
+                target="_blank"
+              >
+                Become a Sponsor
+              </a>
+            </button>
+          </div>*/}
         </div>
       </div>
     </Base>
