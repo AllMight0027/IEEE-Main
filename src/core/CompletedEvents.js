@@ -30,7 +30,7 @@ const CompletedEvents = ({ match }) => {
               <div className="card neon_card">
                 <img
                   className="card-img-top"
-                  src={`https://ieee-srm-sb.herokuapp.com/api/completedevent/photo/${event._id}`}
+                  src={`https://ieee-srmist.herokuapp.com/api/completedevent/photo/${event._id}`}
                   alt=""
                 />
                 <div className="card-body">

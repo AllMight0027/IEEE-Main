@@ -223,7 +223,11 @@ const Home = ({ history }) => {
           </div>
         </div>
 
-        <div className="row mt-5" id="upcoming-events" style={{ minHeight: "190px" }}>
+        <div
+          className="row mt-5"
+          id="upcoming-events"
+          style={{ minHeight: "190px" }}
+        >
           <div className="col-12 text-center mt-5">
             <h1 className="font-weight-bold">Upcoming Events</h1>
           </div>
@@ -265,7 +269,7 @@ const Home = ({ history }) => {
                         <div className="row">
                           <div className="col-3">
                             <img
-                              src={`https://ieee-srm-sb.herokuapp.com/api/upcomingevent/icon/${upcomingEvent._id}`}
+                              src={`https://ieee-srmist.herokuapp.com/api/upcomingevent/icon/${upcomingEvent._id}`}
                               className="img1"
                               alt=""
                             />
@@ -338,11 +342,11 @@ const Home = ({ history }) => {
                 style={{
                   width: "200px",
                   marginLeft: "0px",
-                  marginTop:'20px'
+                  marginTop: "20px",
                 }}
               />
             </a>{" "}
-            <h6 style={{  marginLeft: "0px", marginTop:'10px' }}>
+            <h6 style={{ marginLeft: "0px", marginTop: "10px" }}>
               Domain Sponsor
             </h6>
           </div>

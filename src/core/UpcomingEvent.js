@@ -29,7 +29,7 @@ const UpcomingEvent = ({ match }) => {
         <div className="row">
           <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 text-center">
             <img
-              src={`https://ieee-srm-sb.herokuapp.com/api/upcomingevent/poster/${event._id}`}
+              src={`https://ieee-srmist.herokuapp.com/api/upcomingevent/poster/${event._id}`}
               alt=""
               className="poster mb-4"
               style={{

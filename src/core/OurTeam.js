@@ -34,7 +34,7 @@ function OurTeam() {
               <div className="col-xl-3 col-sm-12 col-md-6 text-center offset-xl-2">
                 <div className="mt-4">
                   <img
-                    src={`https://ieee-srm-sb.herokuapp.com/api/member/photo/${members[0]._id}`}
+                    src={`https://ieee-srmist.herokuapp.com/api/member/photo/${members[0]._id}`}
                     alt=""
                     style={{
                       maxHeight: "200px",
@@ -103,7 +103,7 @@ function OurTeam() {
               <div className="col-xl-6 col-sm-12 col-md-6 text-center">
                 <div className="mt-4">
                   <img
-                    src={`https://ieee-srm-sb.herokuapp.com/api/member/photo/${members[1]._id}`}
+                    src={`https://ieee-srmist.herokuapp.com/api/member/photo/${members[1]._id}`}
                     alt=""
                     style={{
                       maxHeight: "200px",
@@ -176,7 +176,7 @@ function OurTeam() {
                 <div className="col-xl-4 col-sm-12 col-md-6 text-center">
                   <div className="mt-4">
                     <img
-                      src={`https://ieee-srm-sb.herokuapp.com/api/member/photo/${member._id}`}
+                      src={`https://ieee-srmist.herokuapp.com/api/member/photo/${member._id}`}
                       alt=""
                       style={{
                         maxHeight: "200px",
@@ -246,7 +246,7 @@ function OurTeam() {
               <div className="col-xl-12 col-sm-12 col-md-6 text-center">
                 <div className="mt-4">
                   <img
-                    src={`https://ieee-srm-sb.herokuapp.com/api/member/photo/${members[11]._id}`}
+                    src={`https://ieee-srmist.herokuapp.com/api/member/photo/${members[11]._id}`}
                     alt=""
                     style={{
                       maxHeight: "200px",

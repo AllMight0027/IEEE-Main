@@ -1,5 +1,5 @@
 export const getAllMembers = () => {
-  return fetch(`https://ieee-srm-sb.herokuapp.com/api/member`)
+  return fetch(`https://ieee-srmist.herokuapp.com/api/member`)
     .then((data) => {
       return data.json();
     })
@@ -7,7 +7,7 @@ export const getAllMembers = () => {
 };
 
 export const getAllUpcomingEvents = () => {
-  return fetch(`https://ieee-srm-sb.herokuapp.com/api/upcomingevent`)
+  return fetch(`https://ieee-srmist.herokuapp.com/api/upcomingevent`)
     .then((data) => {
       return data.json();
     })
@@ -15,7 +15,7 @@ export const getAllUpcomingEvents = () => {
 };
 
 export const getUpcomingEvent = (eventId) => {
-  return fetch(`https://ieee-srm-sb.herokuapp.com/api/upcomingevent/${eventId}`)
+  return fetch(`https://ieee-srmist.herokuapp.com/api/upcomingevent/${eventId}`)
     .then((data) => {
       return data.json();
     })
@@ -23,7 +23,7 @@ export const getUpcomingEvent = (eventId) => {
 };
 
 export const getAllFolders = () => {
-  return fetch(`https://ieee-srm-sb.herokuapp.com/api/eventfolder`)
+  return fetch(`https://ieee-srmist.herokuapp.com/api/eventfolder`)
     .then((data) => {
       return data.json();
     })
@@ -32,7 +32,7 @@ export const getAllFolders = () => {
 
 export const getCompletedEvents = (folderId) => {
   return fetch(
-    `https://ieee-srm-sb.herokuapp.com/api/completedevent/folder/${folderId}`
+    `https://ieee-srmist.herokuapp.com/api/completedevent/folder/${folderId}`
   )
     .then((data) => {
       return data.json();
